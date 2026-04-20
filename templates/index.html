@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-bg">
+        <div class="hero-grain"></div>
+        <div class="volcano-silhouette"></div>
+    </div>
+    <div class="hero-content">
+        <p class="hero-eyebrow">Discover the Philippines</p>
+        <h1 class="hero-title">
+            <em>Bicol</em><br>
+            Region
+        </h1>
+        <p class="hero-desc">Where a perfect volcano watches over fiery food, miraculous faith, whale sharks, and legends older than memory.</p>
+        <a href="#places" class="hero-cta">Explore the Region</a>
+    </div>
+    <div class="hero-scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+    </div>
+</section>
+
+<section class="intro-band">
+    <div class="intro-inner">
+        <div class="intro-stat">
+            <span class="stat-num">6</span>
+            <span class="stat-label">Provinces</span>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-stat">
+            <span class="stat-num">1</span>
+            <span class="stat-label">Perfect Volcano</span>
+        </div>
+        <div class="intro-divider"></div>
+        <div class="intro-stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Coconut Dishes</span>
+        </div>
+    </div>
+</section>
+
+<section class="about-section">
+    <div class="about-inner">
+        <div class="about-left">
+            <div class="about-label">About the Region</div>
+            <div class="about-img-wrap">
+                <img src="/static/images/Bicol/Bicolregion.jpg" alt="Bicol Region" class="about-img">
+            </div>
+        </div>
+        <div class="about-content">
+            <h2 class="about-title">Land of Fire,<br><em>Coconut &amp; Faith</em></h2>
+            <div class="about-text">
+                <p>Bicol occupies the long southeastern peninsula of Luzon, stretching toward the Visayas like a finger pointing to the rest of the archipelago. It is a land defined by contradictions — volcanoes and sea, burning chili and creamy gata, thundering devotion and quiet village life.</p>
+                <p>The region is home to six provinces, each with its own character, but unified by a shared love of coconut milk, a reverence for the Ina of Peñafrancia, and the ever-present silhouette of Mayon on the horizon.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="places-section" id="places">
+    <div class="places-header">
+        <div class="section-label">Three Destinations</div>
+        <h2 class="places-title">Where Will You Go?</h2>
+    </div>
+    <div class="places-grid">
+        {% for slug, place in places.items() %}
+        <article class="place-card" style="--card-color: {{ place.hero_color }}">
+            <div class="card-number">0{{ loop.index }}</div>
+            <div class="card-body">
+                <div class="card-province">{{ place.province }}</div>
+                <h3 class="card-name">{{ place.name }}</h3>
+                <p class="card-tagline">{{ place.tagline }}</p>
+                <p class="card-desc">{{ place.description[:160] }}…</p>
+                <div class="card-meta">
+                    <span class="meta-item">{{ place.attractions|length }} Attractions</span>
+                    <span class="meta-dot">·</span>
+                    <span class="meta-item">{{ place.delicacies|length }} Delicacies</span>
+                    <span class="meta-dot">·</span>
+                    <span class="meta-item">{{ place.festivals|length }} Festivals</span>
+                </div>
+                <a href="/place/{{ slug }}" class="card-link">
+                    Explore {{ place.name.split()[0] }}
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+            </div>
+            <div class="card-accent-bar"></div>
+        </article>
+        {% endfor %}
+    </div>
+</section>
+
+<section class="feature-band">
+    <div class="feature-inner">
+        <blockquote class="feature-quote">
+            <p>"In Bicol, everything is cooked in coconut milk — including the legends."</p>
+            <cite>— A Bicolano proverb</cite>
+        </blockquote>
+    </div>
+</section>
+
+{% endblock %}

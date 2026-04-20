@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+{% block title %}{{ place.name }} — Bicol Region{% endblock %}
+
+{% block content %}
+
+<section class="place-hero" style="--place-color: {{ place.hero_color }}">
+    {% if place.image %}
+    <div class="place-hero-bg" style="background-image: url('{{ place.image }}'); background-size: cover; background-position: center;"></div>
+    <div class="place-hero-overlay"></div>
+    {% else %}
+    <div class="place-hero-bg"></div>
+    {% endif %}
+    <div class="place-hero-content">
+        <a href="/" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back to Region
+        </a>
+        <div class="place-province-tag">{{ place.province }}</div>
+        <h1 class="place-title">{{ place.name }}</h1>
+        <p class="place-hero-tagline">{{ place.tagline }}</p>
+        <p class="place-hero-desc">{{ place.description }}</p>
+    </div>
+    <div class="place-hero-nav">
+        <a href="#attractions" class="place-nav-item">Attractions</a>
+        <a href="#delicacies" class="place-nav-item">Delicacies</a>
+        <a href="#festivals" class="place-nav-item">Festivals</a>
+        {% if place.myths %}
+        <a href="#myths" class="place-nav-item">Myths</a>
+        {% endif %}
+    </div>
+</section>
+
+<!-- ATTRACTIONS -->
+<section class="content-section" id="attractions">
+    <div class="content-inner">
+        <div class="section-header">
+            <div class="section-number" style="color: {{ place.hero_color }}">01</div>
+            <div>
+                <div class="section-label">Must-See</div>
+                <h2 class="section-title">Top Attractions</h2>
+            </div>
+        </div>
+        <div class="items-grid">
+            {% for item in place.attractions %}
+            <div class="item-card">
+                {% if item.image %}
+                <div class="card-img-wrap"><img src="{{ item.image }}" alt="{{ item.name }}" class="card-img" loading="lazy"></div>
+                {% endif %}
+                <div class="item-index" style="background: {{ place.hero_color }}">{{ "%02d"|format(loop.index) }}</div>
+                <h3 class="item-name">{{ item.name }}</h3>
+                <p class="item-desc">{{ item.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- DELICACIES -->
+<section class="content-section alt-bg" id="delicacies">
+    <div class="content-inner">
+        <div class="section-header">
+            <div class="section-number" style="color: {{ place.hero_color }}">02</div>
+            <div>
+                <div class="section-label">What to Eat</div>
+                <h2 class="section-title">Local Delicacies</h2>
+            </div>
+        </div>
+        <div class="items-grid food-grid">
+            {% for item in place.delicacies %}
+            <div class="item-card food-card">
+                {% if item.image %}
+                <div class="card-img-wrap"><img src="{{ item.image }}" alt="{{ item.name }}" class="card-img" loading="lazy"></div>
+                {% else %}
+                <div class="food-icon">🍽</div>
+                {% endif %}
+                <h3 class="item-name">{{ item.name }}</h3>
+                <p class="item-desc">{{ item.desc }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- FESTIVALS -->
+<section class="content-section" id="festivals">
+    <div class="content-inner">
+        <div class="section-header">
+            <div class="section-number" style="color: {{ place.hero_color }}">03</div>
+            <div>
+                <div class="section-label">When to Visit</div>
+                <h2 class="section-title">Festivals &amp; Celebrations</h2>
+            </div>
+        </div>
+        <div class="festivals-list">
+            {% for fest in place.festivals %}
+            <div class="festival-item">
+                {% if fest.image %}
+                <div class="fest-img-wrap"><img src="{{ fest.image }}" alt="{{ fest.name }}" class="fest-img" loading="lazy"></div>
+                {% endif %}
+                <div class="fest-month" style="background: {{ place.hero_color }}">{{ fest.month }}</div>
+                <div class="fest-body">
+                    <h3 class="fest-name">{{ fest.name }}</h3>
+                    <p class="fest-desc">{{ fest.desc }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% if place.myths %}
+<div class="section-divider"></div>
+
+<!-- MYTHS -->
+<section class="content-section myths-section" id="myths">
+    <div class="content-inner">
+        <div class="section-header">
+            <div class="section-number" style="color: {{ place.hero_color }}">04</div>
+            <div>
+                <div class="section-label">From the Ancients</div>
+                <h2 class="section-title">Myths &amp; Legends</h2>
+            </div>
+        </div>
+        <div class="myths-list">
+            {% for myth in place.myths %}
+            <div class="myth-item">
+                <div class="myth-ornament" style="color: {{ place.hero_color }}">❧</div>
+                <div class="myth-body">
+                    {% if myth.image %}
+                    <div class="myth-img-wrap"><img src="{{ myth.image }}" alt="{{ myth.name }}" class="myth-img" loading="lazy"></div>
+                    {% endif %}
+                    <h3 class="myth-name">{{ myth.name }}</h3>
+                    <p class="myth-desc">{{ myth.desc }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+<!-- OTHER PLACES -->
+<section class="other-places">
+    <div class="other-inner">
+        <h2 class="other-title">Explore More of Bicol</h2>
+        <div class="other-grid">
+            {% for other_slug, other_place in all_places.items() %}
+            {% if other_slug != slug %}
+            <a href="/place/{{ other_slug }}" class="other-card" style="--other-color: {{ other_place.hero_color }}">
+                <div class="other-province">{{ other_place.province }}</div>
+                <div class="other-name">{{ other_place.name }}</div>
+                <div class="other-tagline">{{ other_place.tagline }}</div>
+                <div class="other-arrow">→</div>
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

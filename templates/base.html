@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Bicol Region — Discover the Soul of Southern Luzon{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-container">
+            <a href="/" class="nav-logo">
+                <span class="logo-main">BICOL</span>
+                <span class="logo-sub">REGION</span>
+            </a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/place/legazpi" class="nav-link">Legazpi</a>
+                <a href="/place/naga" class="nav-link">Naga</a>
+                <a href="/place/sorsogon" class="nav-link">Sorsogon</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="logo-main">BICOL</span>
+                <span class="logo-sub">REGION</span>
+            </div>
+            <p class="footer-tagline">Southern Luzon · Philippines · Land of Fire &amp; Coconut</p>
+            <div class="footer-links">
+                <a href="/place/legazpi">Legazpi</a>
+                <span>·</span>
+                <a href="/place/naga">Naga</a>
+                <span>·</span>
+                <a href="/place/sorsogon">Sorsogon</a>
+            </div>
+            <p class="footer-copy">A travel blog celebrating the culture, food, and legends of Bicol.</p>
+        </div>
+    </footer>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
