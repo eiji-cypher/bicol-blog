@@ -245,10 +245,14 @@ places = {
 def index():
     return render_template("index.html", places=places)
  
+WIP_SLUGS = {'naga', 'sorsogon'}
+
 @app.route("/place/<slug>")
 def place(slug):
     if slug not in places:
         return "Place not found", 404
+    if slug in WIP_SLUGS:
+        return render_template("wip.html", place=places[slug])
     return render_template("place.html", place=places[slug], slug=slug, all_places=places)
  
 if __name__ == "__main__":

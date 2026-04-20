@@ -1,5 +1,32 @@
 // Bicol Blog — Main JS
 
+// WIP modal
+const wipOverlay = document.getElementById('wip-overlay');
+const wipTitle = document.getElementById('wip-title');
+const wipClose = document.getElementById('wip-close');
+document.querySelectorAll('.wip-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+        wipTitle.textContent = btn.dataset.name;
+        wipOverlay.classList.add('active');
+    });
+});
+if (wipClose) wipClose.addEventListener('click', () => wipOverlay.classList.remove('active'));
+if (wipOverlay) wipOverlay.addEventListener('click', (e) => {
+    if (e.target === wipOverlay) wipOverlay.classList.remove('active');
+});
+
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+if (navToggle && navLinks) {
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+    // Close on link click
+    navLinks.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', () => navLinks.classList.remove('open'));
+    });
+}
+
 // Smooth nav highlight on scroll
 const sections = document.querySelectorAll('[id]');
 const navLinks = document.querySelectorAll('.place-nav-item');
