@@ -1,16 +1,23 @@
 import os
 from flask import Flask, render_template
 
-# CRITICAL: Tell Flask where to find your folders relative to the /api folder
+# This path logic helps Vercel find folders in the root directory
+base_dir = os.path.abspath(os.path.dirname(__file__))
+template_dir = os.path.join(base_dir, '..', 'templates')
+static_dir = os.path.join(base_dir, '..', 'static')
+
 app = Flask(__name__, 
-            template_folder="../templates", 
-            static_folder="../static")
+            template_folder=template_dir, 
+            static_folder=static_dir)
 
 # Keep your 'places' dictionary and routes as they are...
 
-@app.route("/")
-def index():
-    return render_template("index.html", places=places)
+@app.route("/place/<slug>")
+def place(slug):
+    if slug not in places:
+        return "Place not found", 404
+    # Ensure 'places[slug]' actually exists in your dictionary
+    return render_template("place.html", place=places[slug], slug=slug, all_places=places)
 
 # IMPORTANT: Remove the if __name__ == "__main__" block or keep it, 
 # but Vercel doesn't use it.
