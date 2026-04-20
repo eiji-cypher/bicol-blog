@@ -1,6 +1,19 @@
+import os
 from flask import Flask, render_template
 
-app = Flask(__name__)
+# CRITICAL: Tell Flask where to find your folders relative to the /api folder
+app = Flask(__name__, 
+            template_folder="../templates", 
+            static_folder="../static")
+
+# Keep your 'places' dictionary and routes as they are...
+
+@app.route("/")
+def index():
+    return render_template("index.html", places=places)
+
+# IMPORTANT: Remove the if __name__ == "__main__" block or keep it, 
+# but Vercel doesn't use it.
 
 places = {
     "legazpi": {
