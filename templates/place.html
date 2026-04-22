@@ -68,7 +68,7 @@
         </div>
         <div class="items-grid">
             {% for item in place.attractions %}
-            <div class="item-card">
+            <div class="item-card animate-on-scroll">
                 {% if item.image %}
                 <div class="card-img-wrap">
                     <img src="{{ item.image }}" alt="{{ item.name }}" class="card-img" loading="lazy">
@@ -103,7 +103,7 @@
         </div>
         <div class="items-grid food-grid">
             {% for item in place.delicacies %}
-            <div class="item-card food-card">
+            <div class="item-card food-card animate-on-scroll">
                 {% if item.image %}
                 <div class="card-img-wrap">
                     <img src="{{ item.image }}" alt="{{ item.name }}" class="card-img" loading="lazy">
@@ -139,7 +139,7 @@
         </div>
         <div class="festivals-list">
             {% for fest in place.festivals %}
-            <div class="festival-item">
+            <div class="festival-item animate-on-scroll">
                 {% if fest.image %}
                 <div class="fest-img-wrap">
                     <img src="{{ fest.image }}" alt="{{ fest.name }}" class="fest-img" loading="lazy">
@@ -175,7 +175,7 @@
         </div>
         <div class="myths-list">
             {% for myth in place.myths %}
-            <div class="myth-item">
+            <div class="myth-item animate-on-scroll">
                 <div class="myth-ornament" style="color: {{ place.hero_color }}">❧</div>
                 <div class="myth-body">
                     {% if myth.image %}
@@ -204,7 +204,7 @@
         <div class="other-grid">
             {% for other_slug, other_place in all_places.items() %}
             {% if other_slug != slug %}
-            <a href="/place/{{ other_slug }}" class="other-card" style="--other-color: {{ other_place.hero_color }}">
+            <a href="/place/{{ other_slug }}" class="other-card animate-on-scroll" style="--other-color: {{ other_place.hero_color }}">
                 {% if other_place.image %}
                 <div class="other-card-bg" style="background-image: url('{{ other_place.image }}')"></div>
                 <div class="other-card-overlay"></div>

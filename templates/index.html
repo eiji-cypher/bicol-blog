@@ -3,7 +3,7 @@
 {% block content %}
 
 <section class="hero">
-    <div class="hero-bg">
+    <div class="hero-bg" style="--hero-bg-image: url('/static/images/Bicol/bicolregion.header.jpg');">
         <div class="hero-grain"></div>
         <div class="volcano-silhouette"></div>
     </div>
@@ -13,7 +13,9 @@
             <em>Bicol</em><br>
             Region
         </h1>
-        <p class="hero-desc">Where a perfect volcano watches over fiery food, miraculous faith, whale sharks, and legends older than memory.</p>
+        <p class="hero-desc">Where the earth breathes through a perfect stone peak, 
+            and the spirit is fueled by fire—both in the pot and in the heart—amidst 
+            a landscape of gentle giants and ancient whispers.</p>
         <a href="#places" class="hero-cta">Explore the Region</a>
     </div>
     <div class="hero-scroll-hint">
@@ -64,8 +66,9 @@
         <div class="section-label">Three Destinations</div>
         <h2 class="places-title">Where Will You Go?</h2>
     </div>
-
-            {% endif %}
+    <div class="places-grid">
+        {% for slug, place in places.items() %}
+        <article class="place-card animate-on-scroll" style="--card-color: {{ place.hero_color }}">
             <div class="card-number">0{{ loop.index }}</div>
             <div class="card-body">
                 <div class="card-province">{{ place.province }}</div>
@@ -79,18 +82,10 @@
                     <span class="meta-dot">·</span>
                     <span class="meta-item">{{ place.festivals|length }} Festivals</span>
                 </div>
-                {% if slug in ['sorsogon'] %}
-                <button class="card-link wip-trigger" data-name="{{ place.name }}">
-                    Explore {{ place.name.split()[0] }}
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </button>
-                <div class="wip-badge">Coming Soon</div>
-                {% else %}
                 <a href="/place/{{ slug }}" class="card-link">
                     Explore {{ place.name.split()[0] }}
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 </a>
-                {% endif %}
             </div>
             <div class="card-accent-bar"></div>
         </article>
@@ -106,16 +101,5 @@
         </blockquote>
     </div>
 </section>
-
-<!-- WIP MODAL -->
-<div class="wip-overlay" id="wip-overlay">
-    <div class="wip-modal">
-        <div class="wip-icon">🚧</div>
-        <div class="wip-label">Work in Progress</div>
-        <h2 class="wip-title" id="wip-title"></h2>
-        <p class="wip-msg">This destination page is still being built. Check back soon — great things are coming.</p>
-        <button class="wip-close" id="wip-close">Go Back</button>
-    </div>
-</div>
 
 {% endblock %}

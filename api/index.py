@@ -227,6 +227,36 @@ places = {
                         ]
                     }
                 ]
+        },
+        {
+            "name": "Lignon Hill Nature Park",
+            "desc": "A 156-meter hill providing a 360-degree panoramic view of Legazpi City, the Albay Gulf, and a breathtakingly close look at Mayon Volcano.",
+            "image": "/static/images/Bicol/legazpicity.lignonhill.jpg",
+            "quick_facts": [
+                {"label": "Elevation", "value": "156 meters"},
+                {"label": "Best Time", "value": "Early morning or sunset"},
+                {"label": "Activities", "value": "Zipline, hanging bridge, trekking"}
+            ],
+            "content": [
+                {"type": "lead", "text": "For the best elevated views of Legazpi City without climbing a volcano, Lignon Hill is the ultimate vantage point."},
+                {"type": "text", "text": "Rising 156 meters above the city, Lignon Hill Nature Park offers a steep but rewarding climb. At the summit, visitors are treated to a spectacular 360-degree panorama. To the north, Mayon Volcano looms massive and majestic; to the east, the blue expanse of the Albay Gulf; and below, the sprawling cityscape of Legazpi."},
+                {"type": "tips", "items": ["The walk up is steep but paved. Alternatively, you can hire a habal-habal (motorcycle) to the top.", "Try the 320-meter zipline for an adrenaline rush with Mayon in the background."]}
+            ]
+        },
+        {
+            "name": "Quitinday Green Hills",
+            "desc": "Often called the 'Chocolate Hills of Bicol', this sprawling reserve in Camalig features rolling, grass-covered mounds with Mayon Volcano as a backdrop.",
+            "image": "/static/images/Bicol/legazpicity.quitinday.jpg",
+            "quick_facts": [
+                {"label": "Location", "value": "Camalig, Albay"},
+                {"label": "Formation", "value": "Coral limestone"},
+                {"label": "Nickname", "value": "Bicol's Chocolate Hills"}
+            ],
+            "content": [
+                {"type": "lead", "text": "Tucked away in the municipality of Camalig, the Quitinday Green Hills Formation is a geographical wonder that rivals Bohol's famous landscape, but with a uniquely Bicolano twist: Mayon Volcano photobombing the horizon."},
+                {"type": "text", "text": "These rolling, verdant mounds span across hundreds of hectares. Unlike the coral limestone of Bohol, these hills are believed to be geological formations shaped by ancient volcanic activity and erosion. A short trek to the highest peaks rewards hikers with sweeping views of the lush Albay countryside."},
+                {"type": "tips", "items": ["Best visited during the dry season when the trails are less slippery.", "Rent a tricycle from Camalig town proper for the most convenient access."]}
+            ]
             }
         ],
         "delicacies": [
@@ -387,6 +417,36 @@ places = {
                         ]
                     }
                 ]
+        },
+        {
+            "name": "Guinobatan Longganisa",
+            "desc": "A distinctively small, garlicky, and meaty pork sausage native to the town of Guinobatan, Albay. Traditionally hand-chopped rather than ground.",
+            "image": "/static/images/Bicol/legazpicity.longganisa.jpg",
+            "quick_facts": [
+                {"label": "Type", "value": "Pork sausage"},
+                {"label": "Origin", "value": "Guinobatan, Albay"},
+                {"label": "Flavor Profile", "value": "Garlicky, savory, slightly salty"}
+            ],
+            "content": [
+                {"type": "lead", "text": "Move over, Vigan and Lucban. Albay has its own local sausage star: the Guinobatan Longganisa."},
+                {"type": "text", "text": "What makes Guinobatan Longganisa unique is its preparation. The pork is traditionally hand-chopped into small chunks rather than machine-ground, giving it a chunkier, meatier bite. It is heavily spiced with garlic, black pepper, and salt, skipping the sweetness found in other Filipino longganisas."},
+                {"type": "tips", "items": ["Perfect for breakfast when paired with sinangag (garlic fried rice) and a fried egg.", "Buy them fresh from the Guinobatan public market."]}
+            ]
+        },
+        {
+            "name": "Kandingga",
+            "desc": "The Bicolano version of bopis. Diced pork lungs and heart cooked in coconut milk, vinegar, and plenty of labuyo chilies.",
+            "image": "/static/images/Bicol/legazpicity.kandingga.jpg",
+            "quick_facts": [
+                {"label": "Main Ingredients", "value": "Pork lungs, heart, coconut milk"},
+                {"label": "Flavor", "value": "Spicy, sour, creamy"},
+                {"label": "Heat Level", "value": "High"}
+            ],
+            "content": [
+                {"type": "lead", "text": "Kandingga takes the classic Filipino bopis and elevates it with Bicol's culinary holy trinity: coconut milk, vinegar, and screaming hot chilies."},
+                {"type": "text", "text": "Finely diced pork lungs and heart are sautéed with garlic and onions, soured with local vinegar to cut the richness, and then simmered in coconut cream until the liquid reduces to a thick, spicy, savory glaze. It's a rich, texturally interesting dish that demands heaps of rice."},
+                {"type": "tips", "items": ["A popular pulutan (beer match) but equally satisfying as a main dish.", "You can find this in almost any traditional carinderia across Albay."]}
+            ]
             }
         ],
         "festivals": [
@@ -719,6 +779,36 @@ places = {
                         ]
                     }
                 ]
+        },
+        {
+            "name": "Panicuason Hot Springs",
+            "desc": "A natural thermal resort nestled at the foot of Mt. Isarog, offering multiple pools of varying temperatures heated by geothermal energy.",
+            "image": "/static/images/Bicol/nagacity.panicuason.jpg",
+            "quick_facts": [
+                {"label": "Location", "value": "Panicuason, Naga City"},
+                {"label": "Source", "value": "Mt. Isarog geothermal vents"},
+                {"label": "Temperature", "value": "20°C to 39°C pools"}
+            ],
+            "content": [
+                {"type": "lead", "text": "Hidden in a lush ravine at the base of Mt. Isarog, Panicuason Hot Springs is Naga City's ultimate natural spa retreat."},
+                {"type": "text", "text": "The resort features several natural pools, each with a different temperature ranging from a cool 20 degrees Celsius to a muscle-melting 39 degrees. The mineral-rich waters, heated by the inactive volcano's underground geothermal activity, are believed by locals to have therapeutic properties."},
+                {"type": "tips", "items": ["The road down to the resort is extremely steep; ensure your vehicle's brakes are in good condition.", "Try alternating between the hot and cold pools for a natural hydrotherapy experience."]}
+            ]
+        },
+        {
+            "name": "Malabsay Falls",
+            "desc": "A breathtaking 15-meter waterfall located inside the Mt. Isarog National Park, featuring a deep, icy-cold catch basin perfect for swimming.",
+            "image": "/static/images/Bicol/nagacity.malabsay.jpg",
+            "quick_facts": [
+                {"label": "Location", "value": "Mt. Isarog National Park"},
+                {"label": "Height", "value": "15 meters"},
+                {"label": "Trek Difficulty", "value": "Easy (15-20 minutes)"}
+            ],
+            "content": [
+                {"type": "lead", "text": "Just a short trek from the entrance of Mt. Isarog National Park lies Malabsay Falls, a pristine cascade that perfectly captures the untamed beauty of Bicol's forests."},
+                {"type": "text", "text": "The waterfall drops powerfully from a rocky overhang into a wide, deep plunge pool. Surrounded by giant ferns, mossy boulders, and the symphony of the forest, the icy waters offer a refreshing reward after the hike. The ecosystem around the falls is vibrant and fiercely protected."},
+                {"type": "tips", "items": ["Life vests are available for rent, which is recommended as the plunge pool is quite deep.", "Combine this with a trip to the nearby Panicuason Hot Springs for a full day of nature therapy."]}
+            ]
             }
         ],
         "delicacies": [
@@ -996,6 +1086,7 @@ places = {
             {
                 "name": "Bulusan Volcano Natural Park",
                 "desc": "A UNESCO-recognized natural park surrounding the active Bulusan Volcano with crater lake, rainforest trails, and lake swimming holes.",
+                "image": "/static/images/Bicol/sorsogon.bulusan.jpg",
                 "quick_facts": [
                     {"label": "Elevation", "value": "1,565 m"},
                     {"label": "Status", "value": "Active volcano"},
@@ -1010,6 +1101,7 @@ places = {
             {
                 "name": "Barcelona Church and Watchtower",
                 "desc": "A beautifully preserved 17th-century Spanish colonial church and watchtower, built to watch for pirate raids along the Sorsogon coast.",
+                "image": "/static/images/Bicol/sorsogon.barcelona.jpg",
                 "quick_facts": [
                     {"label": "Built", "value": "17th century"},
                     {"label": "Location", "value": "Barcelona, Sorsogon"},
@@ -1024,6 +1116,7 @@ places = {
             {
                 "name": "Rizal Beach",
                 "desc": "A long stretch of gray-black volcanic sand in Gubat, Sorsogon, known for consistent surf and dramatic atmosphere.",
+                "image": "/static/images/Bicol/sorsogon.rizalbeach.jpg",
                 "quick_facts": [
                     {"label": "Location", "value": "Gubat, Sorsogon"},
                     {"label": "Sand Color", "value": "Gray-black volcanic"},
@@ -1037,46 +1130,60 @@ places = {
             }
         ],
         "delicacies": [
-            {"name": "Butanding Fingers", "desc": "Deep-fried banana fritters named in playful tribute to Donsol's whale sharks — a popular street snack found near the pier and in Sorsogon City markets.", "image": "/static/images/Bicol/sorsogon.butandingfingers.jpg",
-             "quick_facts": [{"label": "Type", "value": "Street food / snack"}, {"label": "Main Ingredient", "value": "Banana (saba)"}, {"label": "Named After", "value": "Butanding (whale shark)"}],
-             "content": [
-                 {"type": "lead", "text": "Not actual whale shark — just a delightful local joke. Butanding Fingers are deep-fried banana fritters shaped like fingers, named in cheerful tribute to the gentle giants of Donsol Bay."},
-                 {"type": "text", "text": "Made from saba bananas coated in a light batter and deep-fried until golden, Butanding Fingers are a beloved street snack in Donsol and Sorsogon City. The name is a playful nod to the town's most famous residents — the whale sharks whose enormous fins and bodies inspired the finger-shaped fritters. They are typically served with a sweet dipping sauce or eaten plain, warm from the fryer."},
-                 {"type": "tips", "items": ["Find them at street food stalls near Donsol pier and in Sorsogon City markets.", "Best eaten fresh and hot — the crisp batter softens quickly as they cool.", "A perfect snack before or after a butanding interaction session."]}
-             ]},
-            {"name": "Hardinera", "desc": "A festive Sorsogon meatloaf baked with pork, chorizo, hard-boiled eggs, bell peppers, and pineapple in a llanera mold — colorful, hearty, and served at every major celebration.", "image": "/static/images/Bicol/sorsogon.hardinera.jpg",
-             "quick_facts": [{"label": "Type", "value": "Festive meatloaf"}, {"label": "Origin", "value": "Sorsogon, Bicol"}, {"label": "Occasion", "value": "Fiestas, celebrations, holidays"}],
-             "content": [
-                 {"type": "lead", "text": "Hardinera is Sorsogon's festive meatloaf — a colorful, hearty baked dish of pork, chorizo, hard-boiled eggs, bell peppers, and pineapple pressed into a llanera mold, unmolded to reveal a mosaic of flavors and colors."},
-                 {"type": "text", "text": "The name 'hardinera' is believed to derive from the Spanish word for 'garden' (jardín), a reference to the colorful, garden-like cross-section revealed when the mold is unmolded and sliced. The dish is a staple of Sorsogon fiestas and family celebrations, prepared in large batches and shared among neighbors and guests. Its combination of savory pork, sweet pineapple, and the richness of chorizo makes it a crowd-pleasing centerpiece of any festive table."},
-                 {"type": "fact-box", "text": "Hardinera is closely related to the embutido (Filipino meatloaf roll) but is distinguished by its use of a llanera mold — the same oval aluminum mold used for leche flan — which gives it its distinctive shape and allows the colorful ingredients to be arranged in decorative layers before steaming or baking."},
-                 {"type": "tips", "items": ["Hardinera is a celebration dish — find it at Sorsogon City restaurants during fiestas and special events.", "Some pasalubong shops in Sorsogon City sell vacuum-packed hardinera for travel.", "It is best served at room temperature, sliced thick, alongside steamed rice."]}
-             ]},
-            {"name": "Timitim", "desc": "A specialty from the town of Gubat — steamed cassava cake made with grated cassava, coconut milk, and sugar, topped with crunchy pili nuts.", "image": "",
-             "quick_facts": [{"label": "Origin", "value": "Gubat, Sorsogon"}, {"label": "Main Ingredients", "value": "Cassava, coconut milk, sugar, pili nuts"}, {"label": "Type", "value": "Steamed rice/cassava cake"}],
-             "content": [
-                 {"type": "lead", "text": "Timitim is one of Sorsogon's most distinctive local delicacies — a steamed cassava cake from the coastal town of Gubat, made with freshly grated cassava, coconut milk, and sugar, crowned with the buttery crunch of pili nuts."},
-                 {"type": "text", "text": "The cassava is grated fresh and combined with coconut milk and sugar to form a dense, moist batter that is then steamed until set. The result is a cake with a pleasantly chewy, slightly sticky texture — similar to a bibingka but denser and more intensely flavored from the cassava. The pili nuts on top add a contrasting crunch and a rich, buttery nuttiness that elevates the simple cake into something memorable."},
-                 {"type": "fact-box", "text": "Timitim is a hyperlocal specialty — it is most authentically found in Gubat, Sorsogon, where it has been made by local families for generations. The combination of cassava and pili nuts is uniquely Sorsogon, bringing together two of the province's most important agricultural products in a single, humble cake."},
-                 {"type": "tips", "items": ["Look for timitim at the Gubat public market and from home bakers in the town — it is rarely found outside Gubat itself.", "Best eaten warm, shortly after steaming.", "Pairs beautifully with hot black coffee or salabat (ginger tea).", "If visiting Rizal Beach in Gubat, ask locals where to find fresh timitim nearby."]}
-             ]},
-            {"name": "Baluko (Pen Shell)", "desc": "A large, fan-shaped sea mollusk served as 'Baluko Express' in spicy coconut milk or as a sisig. Its texture is similar to a scallop but much larger — a true Sorsogon seafood treasure.", "image": "",
-             "quick_facts": [{"label": "Type", "value": "Sea mollusk (pen shell)"}, {"label": "Local Name", "value": "Baluko"}, {"label": "Serving Styles", "value": "Baluko Express (ginataan), sisig"}, {"label": "Texture", "value": "Similar to scallop, larger"}],
-             "content": [
-                 {"type": "lead", "text": "Baluko is Sorsogon's most distinctive seafood — a large, fan-shaped pen shell mollusk harvested from the coastal waters of the province, with a sweet, tender flesh that locals have been cooking in coconut milk and chili for generations."},
-                 {"type": "text", "text": "The pen shell (Atrina pectinata), known locally as baluko, is a large bivalve mollusk that can grow up to 30 centimeters in length. Its adductor muscle — the edible part — has a texture remarkably similar to a large scallop: firm yet tender, with a clean, sweet oceanic flavor. In Sorsogon, it is most famously prepared as 'Baluko Express' — a clear nod to the region's most famous dish — cooked in spicy coconut milk with labuyo chili and aromatics in the Bicolano tradition."},
-                 {"type": "text", "text": "A second popular preparation is baluko sisig — the mollusk chopped and sizzled on a hot plate with onions, chili, and calamansi, in the style of the famous Pampanga pork dish. The result is a seafood sisig with a uniquely Sorsogon character: oceanic, slightly sweet, and fiery."},
-                 {"type": "fact-box", "text": "Pen shells (family Pinnidae) are among the largest bivalves in the world. They anchor themselves vertically in sandy or muddy seabeds using a bundle of silk-like threads called byssus. In ancient Mediterranean cultures, this byssus — known as 'sea silk' — was woven into fine fabric. In Sorsogon, the baluko is valued purely for its extraordinary flavor."},
-                 {"type": "tips", "items": ["Ask at seafood restaurants in Sorsogon City for baluko — it is a local specialty not widely known outside the province.", "The freshest baluko is found at the Sorsogon City fish market in the early morning.", "Baluko Express is the most popular preparation — order it with extra rice.", "If you prefer milder flavors, ask for baluko cooked simply in butter and garlic rather than the spicy coconut milk version."]}
-             ]},
-            {"name": "Hinagom", "desc": "A rustic snack made from freshly harvested, pounded, and roasted glutinous rice mixed with coconut and sugar — a simple, ancient Sorsogon tradition.", "image": "",
-             "quick_facts": [{"label": "Type", "value": "Traditional rice snack"}, {"label": "Main Ingredients", "value": "Glutinous rice, coconut, sugar"}, {"label": "Method", "value": "Pounded and roasted"}],
-             "content": [
-                 {"type": "lead", "text": "Hinagom is one of Sorsogon's oldest and most rustic food traditions — a simple snack of freshly harvested glutinous rice, pounded and roasted, then mixed with grated coconut and sugar. It is the taste of the harvest season, unchanged across generations."},
-                 {"type": "text", "text": "The process of making hinagom begins with freshly harvested glutinous rice (malagkit), which is pounded in a wooden mortar to remove the husks, then dry-roasted in a pan until fragrant and lightly toasted. The roasted grains are mixed with freshly grated coconut and sugar, creating a snack that is simultaneously crunchy, chewy, sweet, and nutty — a combination that is deeply satisfying in its simplicity."},
-                 {"type": "fact-box", "text": "Hinagom is a harvest food — traditionally made during the rice harvest season when freshly cut glutinous rice is available. The practice of pounding and roasting rice is one of the oldest food preparation techniques in the Philippines, predating Spanish colonization by centuries. In Sorsogon, hinagom represents an unbroken thread connecting modern Bicolanos to their pre-colonial ancestors."},
-                 {"type": "tips", "items": ["Hinagom is a seasonal and hyperlocal snack — look for it at rural markets in Sorsogon during the rice harvest season (October–November).", "It is best eaten fresh, on the day it is made.", "Some families in Sorsogon still make hinagom as a harvest ritual — if invited to participate, it is a rare and meaningful cultural experience."]}
-             ]}
+            {"name": "Butanding Fingers", "desc": "Deep-fried banana fritters named in playful tribute to Donsol's whale sharks.", "image": "/static/images/Bicol/sorsogon.butandingfingers.jpg", 
+             "quick_facts": [{"label": "Type", "value": "Street food / snack"}, {"label": "Main Ingredient", "value": "Banana (saba)"}],
+             "content": [{"type": "lead", "text": "Not actual whale shark — just a delightful local joke. Butanding Fingers are deep-fried banana fritters shaped like fingers, named in cheerful tribute to the gentle giants of Donsol Bay."}, {"type": "tips", "items": ["Find them at street food stalls near Donsol pier and in Sorsogon City markets."]}]},
+            {"name": "Hardinera", "desc": "A festive Sorsogon meatloaf baked with pork, chorizo, eggs, and pineapple.", "image": "/static/images/Bicol/sorsogon.hardinera.jpg",
+             "quick_facts": [{"label": "Type", "value": "Festive meatloaf"}, {"label": "Origin", "value": "Sorsogon, Bicol"}],
+             "content": [{"type": "lead", "text": "Hardinera is Sorsogon's festive meatloaf — a colorful, hearty baked dish of pork, chorizo, hard-boiled eggs, bell peppers, and pineapple pressed into a llanera mold, unmolded to reveal a mosaic of flavors and colors."}, {"type": "tips", "items": ["Hardinera is a holiday and celebration dish — find it at Sorsogon City restaurants during fiestas and special events."]}]},
+            {
+                "name": "Timitim",
+                "desc": "A specialty from the town of Gubat. It is a steamed cassava cake made with grated cassava, coconut milk, and sugar, topped with crunchy pili nuts.",
+                "image": "/static/images/Bicol/sorsogon.timitim.jpg",
+                "quick_facts": [
+                    {"label": "Type", "value": "Dessert / Snack"},
+                    {"label": "Main Ingredient", "value": "Cassava, Coconut Milk, Pili Nuts"},
+                    {"label": "Origin", "value": "Gubat, Sorsogon"},
+                ],
+                "content": [{"type": "lead", "text": "Timitim is a delightful steamed cassava cake, a sweet and chewy treat that hails from the town of Gubat. Made with freshly grated cassava, rich coconut milk, and sugar, it's often crowned with the region's signature crunchy pili nuts, offering a perfect blend of textures and flavors."}, {"type": "tips", "items": ["Look for Timitim in local markets and bakeries, especially in Gubat.", "It's a popular snack and dessert, often enjoyed with coffee."]}],
+            },
+            {
+                "name": "Baluko (Pen Shell)",
+                "desc": "A large, fan-shaped sea mollusk often served as 'Baluko Express' (cooked in spicy coconut milk) or as sisig. It has a texture similar to a scallop but is much larger.",
+                "image": "/static/images/Bicol/sorsogon.baluko.jpg",
+                "quick_facts": [
+                    {"label": "Type", "value": "Seafood"},
+                    {"label": "Main Ingredient", "value": "Pen Shell (Baluko)"},
+                    {"label": "Cooking Style", "value": "Ginataang (coconut milk), Sisig"},
+                ],
+                "content": [{"type": "lead", "text": "Baluko, or pen shell, is a prized seafood in Sorsogon, known for its substantial size and delicate flavor. This large, fan-shaped mollusk is a versatile ingredient, often prepared in the classic Bicolano 'Express' style with spicy coconut milk, or as a savory sisig, offering a unique taste of the sea."}, {"type": "tips", "items": ["Try 'Baluko Express' for a spicy, creamy seafood experience.", "Available in seafood restaurants and local eateries, especially those near the coast."]}],
+            },
+            {
+                "name": "Hinagom",
+                "desc": "A rustic snack made from freshly harvested, pounded, and roasted glutinous rice mixed with coconut and sugar.",
+                "image": "/static/images/Bicol/sorsogon.hinagom.jpg",
+                "quick_facts": [
+                    {"label": "Type", "value": "Snack / Kakanin"},
+                    {"label": "Main Ingredient", "value": "Glutinous Rice, Coconut, Sugar"},
+                    {"label": "Preparation", "value": "Pounded and Roasted"},
+                ],
+                "content": [{"type": "lead", "text": "Hinagom is a traditional Sorsogon snack that embodies simplicity and flavor. This rustic treat is crafted from freshly harvested glutinous rice, which is pounded and roasted, then mixed with sweet coconut and sugar, creating a chewy and aromatic delicacy."}, {"type": "tips", "items": ["Often found in local markets and during community gatherings.", "A perfect representation of traditional Bicolano 'kakanin' (rice cakes)."]}],
+            },
+        {
+            "name": "Nilantang Pili (Pili Pulp)",
+            "desc": "A uniquely Sorsoganon snack where the fleshy outer pulp of the pili fruit is boiled until tender and dipped in fish sauce or sugar.",
+            "image": "/static/images/Bicol/sorsogon.nilantangpili.jpg",
+            "quick_facts": [
+                {"label": "Main Ingredient", "value": "Pili fruit pulp"},
+                {"label": "Preparation", "value": "Boiled (Nilanta)"},
+                {"label": "Condiments", "value": "Patis (fish sauce) or brown sugar"}
+            ],
+            "content": [
+                {"type": "lead", "text": "While the rest of the Philippines knows the pili for its buttery nut, Sorsoganons know a delicious secret: the outer pulp of the fruit is just as good."},
+                {"type": "text", "text": "Before you can get to the hard shell that contains the pili nut, there is a dark, fibrous outer skin. When boiled in warm water (a process called 'paglanta'), this pulp softens and turns a deep purple-black. It has an oily, creamy texture akin to a sweet potato or avocado. Locals dip it in patis (fish sauce) with chili for a savory snack, or brown sugar for dessert."},
+                {"type": "tips", "items": ["You must use water at precisely the right temperature—too hot and the pulp turns hard, too cold and it won't soften.", "Look for it in public markets during the pili harvest season (May to October)."]}
+            ]
+        }
         ],
         "festivals": [
             {"name": "Kasanggayahan Festival", "month": "October", "desc": "Sorsogon's founding anniversary celebration featuring street dancing, cultural presentations, agri-trade fairs, and beauty pageants.", "image": "",
