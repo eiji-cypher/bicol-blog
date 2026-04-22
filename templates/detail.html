@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% block title %}{{ item.name }} — {{ place.name }} — Bicol Region{% endblock %}
+
+{% block content %}
+
+<section class="detail-hero" style="--place-color: {{ place.hero_color }}">
+    {% if item.image %}
+    <div class="detail-hero-bg" style="background-image: url('{{ item.image }}')"></div>
+    <div class="detail-hero-overlay"></div>
+    {% else %}
+    <div class="detail-hero-bg" style="background: {{ place.hero_color }}"></div>
+    <div class="detail-hero-overlay"></div>
+    {% endif %}
+    <div class="hero-grain"></div>
+    <div class="detail-hero-content">
+        <a href="/place/{{ slug }}#{{ section }}" class="back-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Back to {{ place.name }}
+        </a>
+        <div class="detail-category-tag" style="border-color: {{ place.hero_color }}">{{ category_label }}</div>
+        <h1 class="detail-title">{{ item.name }}</h1>
+        <p class="detail-subtitle">{{ item.desc }}</p>
+    </div>
+</section>
+
+<div class="detail-body">
+    <div class="detail-inner">
+
+        <!-- QUICK FACTS SIDEBAR -->
+        {% if item.quick_facts %}
+        <aside class="detail-sidebar">
+            <div class="quick-facts">
+                <div class="quick-facts-label">Quick Facts</div>
+                {% for fact in item.quick_facts %}
+                <div class="quick-fact-row">
+                    <span class="quick-fact-key">{{ fact.label }}</span>
+                    <span class="quick-fact-val">{{ fact.value }}</span>
+                </div>
+                {% endfor %}
+            </div>
+
+            {% if related %}
+            <div class="detail-related">
+                <div class="quick-facts-label">More {{ section|capitalize }}</div>
+                {% for r in related %}
+                <a href="/detail/{{ slug }}/{{ r.section }}/{{ r.key }}" class="related-item">
+                    {% if r.image %}
+                    <div class="related-img" style="background-image: url('{{ r.image }}')"></div>
+                    {% else %}
+                    <div class="related-img related-img--placeholder" style="background: {{ place.hero_color }}"></div>
+                    {% endif %}
+                    <span class="related-name">{{ r.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+            {% endif %}
+        </aside>
+        {% endif %}
+
+        <!-- MAIN CONTENT -->
+        <article class="detail-article">
+            {% if item.content %}
+            {% for cb in item.content %}
+
+            {% if cb.type == 'lead' %}
+            <p class="detail-lead">{{ cb.text }}</p>
+
+            {% elif cb.type == 'heading' %}
+            <h2 class="detail-heading">{{ cb.text }}</h2>
+
+            {% elif cb.type == 'text' %}
+            <p class="detail-text">{{ cb.text }}</p>
+
+            {% elif cb.type == 'quote' %}
+            <blockquote class="detail-quote">
+                <p>{{ cb.text }}</p>
+                {% if cb.cite %}<cite>— {{ cb.cite }}</cite>{% endif %}
+            </blockquote>
+
+            {% elif cb.type == 'fact-box' %}
+            <div class="detail-fact-box" style="border-color: {{ place.hero_color }}">
+                <div class="fact-box-icon" style="color: {{ place.hero_color }}">◈</div>
+                <p>{{ cb.text }}</p>
+            </div>
+
+            {% elif cb.type == 'tips' %}
+            <div class="detail-tips">
+                <div class="tips-label" style="color: {{ place.hero_color }}">Visitor Tips</div>
+                <ul class="tips-list">
+                    {% for tip in cb['items'] %}
+                    <li>{{ tip }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            {% endif %}
+            {% endfor %}
+            {% else %}
+            <p class="detail-lead">{{ item.desc }}</p>
+            {% endif %}
+
+            <!-- PREV / NEXT NAV -->
+            <div class="detail-nav">
+                {% if prev_item %}
+                <a href="/detail/{{ slug }}/{{ section }}/{{ prev_item.key }}" class="detail-nav-btn detail-nav-btn--prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <span>{{ prev_item.name }}</span>
+                </a>
+                {% else %}
+                <div></div>
+                {% endif %}
+                {% if next_item %}
+                <a href="/detail/{{ slug }}/{{ section }}/{{ next_item.key }}" class="detail-nav-btn detail-nav-btn--next">
+                    <span>{{ next_item.name }}</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </a>
+                {% endif %}
+            </div>
+        </article>
+
+    </div>
+</div>
+
+{% endblock %}

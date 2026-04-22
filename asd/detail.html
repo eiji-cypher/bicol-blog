@@ -1,0 +1,221 @@
+{% extends "base.html" %}
+{% block title %}{{ item.name }} — {{ place.name }}, Bicol Region{% endblock %}
+
+{% block content %}
+
+<!-- PAGE TRANSITION OVERLAY -->
+<div class="page-transition-overlay" id="page-transition"></div>
+
+<!-- DETAIL HERO -->
+<section class="detail-hero" style="--detail-color: {{ place.hero_color }}">
+    {% if item.image %}
+    <div class="detail-hero-bg" style="background-image: url('{{ item.image }}')"></div>
+    <div class="detail-hero-overlay"></div>
+    {% else %}
+    <div class="detail-hero-bg detail-hero-bg--plain"></div>
+    {% endif %}
+
+    <div class="detail-hero-content">
+        <a href="/place/{{ slug }}#{{ section }}" class="back-link detail-back-link js-back-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Back to {{ place.name }}
+        </a>
+
+        <div class="detail-category-tag" style="background: {{ place.hero_color }}">
+            {{ category_label }}
+        </div>
+
+        <h1 class="detail-title">{{ item.name }}</h1>
+
+        {% if item.month %}
+        <div class="detail-month-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M3 9h18M8 2v4M16 2v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            {{ item.month }}
+        </div>
+        {% endif %}
+
+        <p class="detail-hero-desc">{{ item.desc }}</p>
+    </div>
+
+    <div class="detail-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Read More</span>
+    </div>
+</section>
+
+<!-- MAIN DETAIL CONTENT -->
+<article class="detail-body">
+    <div class="detail-body-inner">
+
+        <!-- RICH CONTENT -->
+        <div class="detail-prose">
+            {% for section_block in item.content %}
+            <div class="prose-block prose-block--{{ section_block.type }} animate-on-scroll">
+                {% if section_block.type == 'lead' %}
+                <p class="prose-lead">{{ section_block.text }}</p>
+
+                {% elif section_block.type == 'text' %}
+                <p>{{ section_block.text }}</p>
+
+                {% elif section_block.type == 'heading' %}
+                <h2 class="prose-heading" style="--heading-color: {{ place.hero_color }}">{{ section_block.text }}</h2>
+
+                {% elif section_block.type == 'subheading' %}
+                <h3 class="prose-subheading">{{ section_block.text }}</h3>
+
+                {% elif section_block.type == 'quote' %}
+                <blockquote class="prose-quote" style="border-color: {{ place.hero_color }}">
+                    <p>{{ section_block.text }}</p>
+                    {% if section_block.cite %}<cite>— {{ section_block.cite }}</cite>{% endif %}
+                </blockquote>
+
+                {% elif section_block.type == 'fact-box' %}
+                <div class="fact-box" style="--fact-color: {{ place.hero_color }}">
+                    <div class="fact-box-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                        Did You Know?
+                    </div>
+                    <p>{{ section_block.text }}</p>
+                </div>
+
+                {% elif section_block.type == 'image' %}
+                <figure class="prose-figure">
+                    <img src="{{ section_block.src }}" alt="{{ section_block.alt }}" class="prose-img" loading="lazy">
+                    {% if section_block.caption %}
+                    <figcaption>{{ section_block.caption }}</figcaption>
+                    {% endif %}
+                </figure>
+
+                {% elif section_block.type == 'list' %}
+                <ul class="prose-list" style="--list-color: {{ place.hero_color }}">
+                    {% for li in section_block.items %}
+                    <li>{{ li }}</li>
+                    {% endfor %}
+                </ul>
+
+                {% elif section_block.type == 'tips' %}
+                <div class="tips-box" style="--tips-color: {{ place.hero_color }}">
+                    <div class="tips-label">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2C9.24 2 7 4.24 7 7c0 2.05 1.23 3.81 3 4.58V13a1 1 0 001 1h2a1 1 0 001-1v-1.42c1.77-.77 3-2.53 3-4.58C17 4.24 14.76 2 12 2zM10 18h4v1a1 1 0 01-1 1h-2a1 1 0 01-1-1v-1z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                        </svg>
+                        Traveler's Tips
+                    </div>
+                    <ul>
+                        {% for tip in section_block.items %}
+                        <li>{{ tip }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="detail-sidebar">
+            <!-- QUICK FACTS -->
+            {% if item.quick_facts %}
+            <div class="sidebar-card animate-on-scroll" style="--card-accent: {{ place.hero_color }}">
+                <h3 class="sidebar-card-title">Quick Facts</h3>
+                <dl class="quick-facts-list">
+                    {% for fact in item.quick_facts %}
+                    <div class="fact-row">
+                        <dt>{{ fact.label }}</dt>
+                        <dd>{{ fact.value }}</dd>
+                    </div>
+                    {% endfor %}
+                </dl>
+            </div>
+            {% endif %}
+
+            <!-- PLACE CARD MINI -->
+            <div class="sidebar-card sidebar-card--place animate-on-scroll" style="--card-accent: {{ place.hero_color }}">
+                <div class="sidebar-place-tag">Part of</div>
+                <div class="sidebar-place-name">{{ place.name }}</div>
+                <div class="sidebar-place-province">{{ place.province }}</div>
+                <p class="sidebar-place-tagline">{{ place.tagline }}</p>
+                <a href="/place/{{ slug }}" class="sidebar-place-link" style="background: {{ place.hero_color }}">
+                    Explore {{ place.name.split()[0] }}
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+
+            <!-- RELATED ITEMS -->
+            {% if related %}
+            <div class="sidebar-card animate-on-scroll" style="--card-accent: {{ place.hero_color }}">
+                <h3 class="sidebar-card-title">More from {{ place.name.split()[0] }}</h3>
+                <div class="related-list">
+                    {% for r in related %}
+                    <a href="/detail/{{ slug }}/{{ r.section }}/{{ r.key }}" class="related-item">
+                        {% if r.image %}
+                        <div class="related-thumb" style="background-image: url('{{ r.image }}')"></div>
+                        {% else %}
+                        <div class="related-thumb related-thumb--plain" style="background: {{ place.hero_color }}20">
+                            <span style="color: {{ place.hero_color }}">{{ r.name[0] }}</span>
+                        </div>
+                        {% endif %}
+                        <div class="related-info">
+                            <div class="related-name">{{ r.name }}</div>
+                            <div class="related-category">{{ r.category }}</div>
+                        </div>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </aside>
+    </div>
+</article>
+
+<!-- BOTTOM NAVIGATION -->
+<nav class="detail-bottom-nav">
+    <div class="detail-bottom-nav-inner">
+        {% if prev_item %}
+        <a href="/detail/{{ slug }}/{{ section }}/{{ prev_item.key }}" class="detail-nav-btn detail-nav-btn--prev js-page-link">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                <path d="M13 8H3M3 8L7 4M3 8L7 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="detail-nav-text">
+                <span class="detail-nav-label">Previous</span>
+                <span class="detail-nav-name">{{ prev_item.name }}</span>
+            </div>
+        </a>
+        {% else %}
+        <div></div>
+        {% endif %}
+
+        <a href="/place/{{ slug }}#{{ section }}" class="detail-nav-home js-page-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                <path d="M3 12L12 3l9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            All {{ place.name.split()[0] }}
+        </a>
+
+        {% if next_item %}
+        <a href="/detail/{{ slug }}/{{ section }}/{{ next_item.key }}" class="detail-nav-btn detail-nav-btn--next js-page-link">
+            <div class="detail-nav-text detail-nav-text--right">
+                <span class="detail-nav-label">Next</span>
+                <span class="detail-nav-name">{{ next_item.name }}</span>
+            </div>
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+        {% else %}
+        <div></div>
+        {% endif %}
+    </div>
+</nav>
+
+{% endblock %}

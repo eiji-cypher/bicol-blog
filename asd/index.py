@@ -693,7 +693,7 @@ places = {
             {
                 "name": "Naga City Heritage District",
                 "desc": "A compact zone of colonial-era buildings, the oldest church in Bicol, and the vibrant Naga City public market — the commercial and cultural soul of the Bicol capital.",
-                "image": "/static/images/Bicol/nagacity.heritagedist.jpg",
+                "image": "/static/images/Bicol/nagacity.heritage.jpg",
                 "quick_facts": [
                     {"label": "Location", "value": "Central Naga City, Camarines Sur"},
                     {"label": "Key Sites", "value": "Metropolitan Cathedral, Naga Museum, City Hall"},
@@ -729,82 +729,120 @@ places = {
                 "quick_facts": [
                     {"label": "Main Ingredients", "value": "Dried taro leaves, coconut cream, pork/shrimp"},
                     {"label": "Vs Pinangat", "value": "Drier, more concentrated, uses dried leaves"},
-                    {"label": "Cooking Time", "value": "1\u20131.5 hours minimum"},
+                    {"label": "Cooking Time", "value": "1–1.5 hours minimum"},
                     {"label": "Heat Level", "value": "Moderate to hot (labuyo optional)"},
                 ],
                 "content": [
-                    {"type": "lead", "text": "Laing is to Bicol what adobo is to the rest of the Philippines \u2014 a dish so deeply embedded in the regional identity that its name alone evokes an entire way of life. Dried taro leaves, slow-cooked in coconut cream with pork and shrimp until the sauce has reduced to a concentrated, clingy, intensely flavorful coating: this is Bicolano comfort at its most essential."},
-                    {"type": "text", "text": "The critical distinction between laing and its close relative pinangat is the use of dried (rather than fresh) taro leaves, and the long, slow cooking process that reduces the coconut cream until it is almost entirely absorbed. The result is a dish that is drier, denser, and more powerfully flavored than pinangat \u2014 each leaf saturated with the combined essence of coconut, pork fat, shrimp, and chili."},
-                    {"type": "fact-box", "text": "A critical rule in making authentic laing: do not stir the taro leaves during the first half of cooking. Stirring prematurely breaks the leaves and releases their calcium oxalate crystals into the sauce, causing an unpleasant itching sensation in the throat."},
-                    {"type": "tips", "items": [
-                        "Laing is ubiquitous in Naga and all of Bicol \u2014 every carinderia serves it, and quality is generally excellent.",
-                        "Request 'spicy laing' if you want the full Bicolano experience with labuyo chili.",
-                        "Laing makes an excellent pasalubong when vacuum-sealed \u2014 many producers in Naga City offer packaged versions for travel."
-                    ]}
+                    {
+                        "type": "lead",
+                        "text": "Laing is to Bicol what adobo is to the rest of the Philippines — a dish so deeply embedded in the regional identity that its name alone evokes an entire way of life. Dried taro leaves, slow-cooked in coconut cream with pork and shrimp until the sauce has reduced to a concentrated, clingy, intensely flavorful coating: this is Bicolano comfort at its most essential."
+                    },
+                    {
+                        "type": "text",
+                        "text": "The critical distinction between laing and its close relative pinangat is the use of dried (rather than fresh) taro leaves, and the long, slow cooking process that reduces the coconut cream until it is almost entirely absorbed. The result is a dish that is drier, denser, and more powerfully flavored than pinangat — each leaf saturated with the combined essence of coconut, pork fat, shrimp, and chili."
+                    },
+                    {
+                        "type": "fact-box",
+                        "text": "A critical rule in making authentic laing: do not stir the taro leaves during the first half of cooking. Stirring prematurely breaks the leaves and releases their calcium oxalate crystals into the sauce, causing an unpleasant itching sensation in the throat. The leaves must be allowed to 'cook down' in the steam of the coconut cream before they are safe to combine with the rest of the dish."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Laing is ubiquitous in Naga and all of Bicol — every carinderia serves it, and quality is generally excellent.",
+                            "It is best eaten the day it is made, while the coconut cream is still at peak freshness and creaminess.",
+                            "Request 'spicy laing' if you want the full Bicolano experience with labuyo chili.",
+                            "Laing makes an excellent pasalubong when vacuum-sealed — many producers in Naga City offer packaged versions for travel."
+                        ]
+                    }
                 ]
             },
             {
-                "name": "Bigg's Diner Burgers",
-                "desc": "A beloved Naga institution since 1987. Bigg's is the local fast-food chain that Bicolanos proudly champion \u2014 their thick, saucy burgers and palabok are a Naga rite of passage.",
-                "image": "/static/images/Bicol/nagacity.biggsdiner.jpg",
+                "name": "Pili Tart",
+                "desc": "A buttery pastry shell filled with sweetened pili nut paste — Bicol's answer to the egg tart, richer and nuttier.",
+                "image": "/static/images/Bicol/nagacity.pilitart.jpg",
                 "quick_facts": [
-                    {"label": "Founded", "value": "1987, Naga City"},
-                    {"label": "Type", "value": "Local fast-food chain"},
-                    {"label": "Must-Try", "value": "Burgers, palabok, spaghetti"},
-                    {"label": "Branches", "value": "Throughout Bicol Region"},
+                    {"label": "Main Ingredients", "value": "Pili nut, pastry shell, sugar, butter"},
+                    {"label": "Texture", "value": "Crumbly pastry, dense nut filling"},
+                    {"label": "Best Bought At", "value": "Naga City pasalubong shops"},
+                    {"label": "Related To", "value": "Pili candy, pili brittle"},
                 ],
                 "content": [
-                    {"type": "lead", "text": "Bigg's Diner is Naga City's most beloved homegrown restaurant chain \u2014 a local fast-food institution that has been feeding Bicolanos since 1987 and remains a point of fierce regional pride."},
-                    {"type": "text", "text": "Founded in Naga City in 1987, Bigg's Diner grew from a single diner into a regional chain with branches across the Bicol Region. Its menu centers on thick, saucy burgers, Filipino-style spaghetti, and palabok \u2014 all served in generous portions at prices that have kept generations of Naguenos loyal. For Bicolanos living abroad or in Manila, a visit to Bigg's upon returning home is practically a ritual."},
-                    {"type": "fact-box", "text": "Bigg's Diner is one of the few Filipino regional fast-food chains to have successfully resisted displacement by national and international chains. In Naga City, it remains more popular than any global burger brand \u2014 a testament to the loyalty of Bicolano consumers to their own."},
-                    {"type": "tips", "items": [
-                        "The original Bigg's branch in Naga City is the one to visit for the full experience.",
-                        "Try the palabok alongside the burger \u2014 the combination sounds odd but is a beloved local pairing.",
-                        "Bigg's is busiest at lunch and dinner \u2014 arrive slightly off-peak for faster service."
-                    ]}
+                    {
+                        "type": "lead",
+                        "text": "The pili tart is one of the most beloved pastry traditions in all of Bicol — a buttery, crumbly shortcrust shell filled with a dense, sweetened pili nut paste that tastes like nothing else in the world. It is a small, perfect thing, and buying a box to bring home is a near-sacred obligation for any visitor to Naga City."
+                    },
+                    {
+                        "type": "text",
+                        "text": "The filling is made from roasted pili kernels ground into a paste and sweetened with sugar and butter, creating something with the density of marzipan but a distinctly different, earthier, nuttier flavor. The pastry shell is typically shortcrust — flaky, buttery, and designed to complement rather than overshadow the nut filling. Some bakers add a thin layer of egg custard over the pili paste, creating a hybrid that bridges the Chinese-influenced egg tart tradition with Bicolano ingredients."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Buy pili tarts from established pasalubong shops in Naga City for the best quality — look for shops that bake fresh daily.",
+                            "Pili tarts are best eaten at room temperature on the day of purchase.",
+                            "They make excellent gifts — individual boxes of 6 or 12 tarts are typically available.",
+                            "Look for artisanal bakeries that use freshly ground pili paste rather than pre-made filling."
+                        ]
+                    }
                 ]
             },
             {
-                "name": "Sili Ice Cream",
-                "desc": "Arguably Bicol's most adventurous delicacy \u2014 chili-infused ice cream. The sweet cream and fiery labuyo create an unforgettable push-pull that captures Bicol's bold culinary spirit.",
-                "image": "/static/images/Bicol/nagacity.sili.jpg",
+                "name": "Pancit Bato",
+                "desc": "Thick, slightly rough-textured rice noodles from the town of Bato, Camarines Sur — a Bicolano pasta unique to the region.",
+                "image": "/static/images/Bicol/nagacity.pancitbato.jpg",
                 "quick_facts": [
-                    {"label": "Key Ingredient", "value": "Labuyo chili (siling labuyo)"},
-                    {"label": "Flavor Profile", "value": "Sweet, creamy, then fiery"},
-                    {"label": "Origin", "value": "Bicol Region, Philippines"},
-                    {"label": "Heat Level", "value": "Mild to moderate (varies by maker)"},
+                    {"label": "Noodle Type", "value": "Thick, sun-dried rice noodles"},
+                    {"label": "Origin", "value": "Bato, Camarines Sur"},
+                    {"label": "Key Feature", "value": "Rough texture, chewier than standard noodles"},
+                    {"label": "Common Serving", "value": "Stir-fried with pork, vegetables, soy sauce"},
                 ],
                 "content": [
-                    {"type": "lead", "text": "Sili ice cream is Bicol's most famous culinary paradox \u2014 a frozen dessert spiked with labuyo chili that delivers a wave of sweet, creamy cold followed by a slow, building heat. It is the edible embodiment of the Bicolano character: warm, welcoming, and then unexpectedly fiery."},
-                    {"type": "text", "text": "The concept is simple but the execution is surprisingly nuanced. The chili is incorporated into the ice cream base in a way that allows the sweetness and creaminess to register first on the palate, with the heat arriving as a pleasant afterburn rather than an assault. The best versions use fresh labuyo chili, which has a fruity, bright heat distinct from the dull burn of dried chili powder."},
-                    {"type": "fact-box", "text": "Sili ice cream has become so associated with Bicol that it is now sold in pasalubong shops across the region and has inspired a wave of chili-infused food products \u2014 sili chocolate, sili candy, sili vinegar \u2014 that collectively form a uniquely Bicolano food identity built around the labuyo chili."},
-                    {"type": "tips", "items": [
-                        "The most famous sili ice cream in Naga is sold at small shops near the Peñafrancia Shrine area \u2014 ask locals for the current best spot.",
-                        "Start with a small scoop if you're heat-sensitive \u2014 the heat level varies significantly between makers.",
-                        "Sili ice cream is best eaten immediately \u2014 the heat dissipates somewhat when the ice cream melts."
-                    ]}
+                    {
+                        "type": "lead",
+                        "text": "Pancit Bato is Bicol's own noodle tradition — thick, slightly rough-textured rice noodles from the town of Bato in Camarines Sur, with a chewiness and substance that sets them apart from the fine vermicelli used in most Filipino pancit dishes."
+                    },
+                    {
+                        "type": "text",
+                        "text": "Unlike the thin rice noodles (bihon) or egg noodles (canton) that dominate mainstream Filipino pancit, Pancit Bato uses thick, sun-dried rice noodles with a rustic, hand-made quality. The rough surface of the noodles clings to sauces and absorbs flavors more readily than smoother commercial varieties, giving the dish a heartier, more satisfying quality. They are typically stir-fried with pork, vegetables, and soy-based sauces, often with calamansi (Philippine lime) on the side."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Pancit Bato noodles are available dried in pasalubong shops throughout Naga City and Camarines Sur — they travel well.",
+                            "The best prepared Pancit Bato is found in traditional restaurants in Naga City and in Bato town itself.",
+                            "Soak dried Pancit Bato noodles in warm water for 15–20 minutes before cooking to achieve the right texture."
+                        ]
+                    }
                 ]
             },
             {
-                "name": "Tinutungang Manok",
-                "desc": "Chicken simmered in charred coconut and coconut cream, giving it a smoky, nutty depth. The burnt coconut imparts a uniquely Bicolano complexity to this comforting dish.",
-                "image": "/static/images/Bicol/nagacity.tinutungangmanok.jpg",
+                "name": "Tinutungan",
+                "desc": "Chicken or pork cooked in burnt coconut (tunu) cream — a uniquely Bicolano technique that gives the dish a smoky, complex coconut flavor.",
+                "image": "/static/images/Bicol/nagacity.tinutungan.jpg",
                 "quick_facts": [
                     {"label": "Key Technique", "value": "Burnt (tunu) coconut cream"},
-                    {"label": "Main Protein", "value": "Chicken"},
+                    {"label": "Main Protein", "value": "Chicken or pork"},
                     {"label": "Flavor Profile", "value": "Smoky, nutty, rich coconut"},
                     {"label": "Origin", "value": "Bicol Region, Philippines"},
                 ],
                 "content": [
-                    {"type": "lead", "text": "Tinutungang Manok is one of Bicol's most distinctive dishes \u2014 chicken slow-cooked in coconut cream made from deliberately charred coconut flesh, producing a sauce of extraordinary smoky, nutty depth that transforms a simple chicken braise into something unforgettable."},
-                    {"type": "text", "text": "The word 'tinutungan' comes from 'tunu,' meaning 'to burn' or 'to char.' Fresh coconut flesh is roasted until darkened before being grated and pressed for cream. The resulting gata has a dramatically different flavor from standard coconut milk \u2014 complex, smoky, with a nuttiness that recalls toasted sesame. This burnt coconut cream is then used to braise chicken with garlic, onion, and ginger until the meat is tender and deeply infused with the smoky sauce."},
-                    {"type": "fact-box", "text": "The tinutungan technique is unique to the Bicol Region and represents one of the most sophisticated applications of coconut in Filipino cooking. The deliberate charring of the coconut before extraction is a technique not found in any other Philippine regional cuisine, making tinutungang manok a truly irreplaceable Bicolano original."},
-                    {"type": "tips", "items": [
-                        "Tinutungang manok is a specialty dish \u2014 seek out restaurants in Naga City that specialize in traditional Bicolano cooking.",
-                        "The smoky flavor should be present but not overpowering \u2014 a well-made version is subtle and complex.",
-                        "It pairs beautifully with plain steamed rice and a simple vegetable side dish.",
-                        "Ask locals for their recommended 'lutong Bicol' restaurants \u2014 this is where you'll find the best tinutungang manok."
-                    ]}
+                    {
+                        "type": "lead",
+                        "text": "Tinutungan is one of Bicol's most distinctive and underappreciated culinary achievements — a dish built on a technique unique to the region: the deliberate charring of fresh coconut flesh before extracting the cream, which imparts a deep, smoky, nutty character to everything it touches."
+                    },
+                    {
+                        "type": "text",
+                        "text": "The word 'tinutungan' comes from 'tunu,' meaning 'to burn' or 'to char.' Fresh coconut flesh is roasted or toasted until darkened before being grated and pressed for cream, and the resulting gata has a dramatically different flavor from standard coconut milk — complex, smoky, with a nuttiness that recalls toasted sesame or roasted macadamia. This burnt coconut cream is then used to cook chicken or pork in a slow braise, absorbing the flavors of aromatics like garlic, onion, and ginger while the smokiness intensifies."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Tinutungan is a specialty dish not always found in everyday carinderias — seek out restaurants that specialize in traditional Bicolano cooking.",
+                            "The smoky flavor is subtle in well-made versions; if it tastes acrid or bitter, the coconut was over-charred.",
+                            "It pairs beautifully with plain steamed rice and a simple vegetable side dish.",
+                            "Ask Naga City locals for their recommended 'lutong Bicol' (Bicolano cooking) restaurants — this is where you'll find tinutungan."
+                        ]
+                    }
                 ]
             }
         ],
@@ -813,7 +851,7 @@ places = {
                 "name": "Peñafrancia Festival",
                 "month": "September",
                 "desc": "Asia's largest Marian celebration, drawing 1.5 million devotees to Naga every September. The highlight is the spectacular Fluvial Procession on the Naga River, where the image of Ina returns to her basilica by barge.",
-                "image": "/static/images/Bicol/nagacity.1stfest.jpg",
+                "image": "/static/images/Bicol/nagacity.penafrancia.jpg",
                 "quick_facts": [
                     {"label": "When", "value": "Third Sunday of September (month-long)"},
                     {"label": "Annual Pilgrims", "value": "~1.5 million"},
@@ -975,13 +1013,12 @@ places = {
         "tagline": "Where Land Meets the Whale Shark",
         "hero_color": "#1e8449",
         "description": "At the southernmost tip of Luzon, Sorsogon is where the Bicol Peninsula meets the sea. Famous for whale shark encounters, natural hot springs, and pristine beaches, it is Bicol's wild, unhurried edge.",
-        "image": "/static/images/Bicol/sorsogon.jpg",
+        "image": "https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=1200&q=80",
         "image_hint": "sorsogon-whale-shark",
         "attractions": [
             {
                 "name": "Donsol Whale Shark Interaction",
                 "desc": "Swimming alongside butanding (whale sharks) in their natural habitat. Donsol is considered one of the world's best places for ethical whale shark encounters.",
-                "image": "/static/images/Bicol/sorsogon.donsol.jpg",
                 "quick_facts": [
                     {"label": "Season", "value": "November to June"},
                     {"label": "Location", "value": "Donsol, Sorsogon"},
@@ -1037,60 +1074,32 @@ places = {
             }
         ],
         "delicacies": [
-            {"name": "Butanding Fingers", "desc": "Deep-fried banana fritters named in playful tribute to Donsol's whale sharks — a popular street snack found near the pier and in Sorsogon City markets.", "image": "/static/images/Bicol/sorsogon.butandingfingers.jpg",
-             "quick_facts": [{"label": "Type", "value": "Street food / snack"}, {"label": "Main Ingredient", "value": "Banana (saba)"}, {"label": "Named After", "value": "Butanding (whale shark)"}],
-             "content": [
-                 {"type": "lead", "text": "Not actual whale shark — just a delightful local joke. Butanding Fingers are deep-fried banana fritters shaped like fingers, named in cheerful tribute to the gentle giants of Donsol Bay."},
-                 {"type": "text", "text": "Made from saba bananas coated in a light batter and deep-fried until golden, Butanding Fingers are a beloved street snack in Donsol and Sorsogon City. The name is a playful nod to the town's most famous residents — the whale sharks whose enormous fins and bodies inspired the finger-shaped fritters. They are typically served with a sweet dipping sauce or eaten plain, warm from the fryer."},
-                 {"type": "tips", "items": ["Find them at street food stalls near Donsol pier and in Sorsogon City markets.", "Best eaten fresh and hot — the crisp batter softens quickly as they cool.", "A perfect snack before or after a butanding interaction session."]}
-             ]},
-            {"name": "Hardinera", "desc": "A festive Sorsogon meatloaf baked with pork, chorizo, hard-boiled eggs, bell peppers, and pineapple in a llanera mold — colorful, hearty, and served at every major celebration.", "image": "/static/images/Bicol/sorsogon.hardinera.jpg",
-             "quick_facts": [{"label": "Type", "value": "Festive meatloaf"}, {"label": "Origin", "value": "Sorsogon, Bicol"}, {"label": "Occasion", "value": "Fiestas, celebrations, holidays"}],
-             "content": [
-                 {"type": "lead", "text": "Hardinera is Sorsogon's festive meatloaf — a colorful, hearty baked dish of pork, chorizo, hard-boiled eggs, bell peppers, and pineapple pressed into a llanera mold, unmolded to reveal a mosaic of flavors and colors."},
-                 {"type": "text", "text": "The name 'hardinera' is believed to derive from the Spanish word for 'garden' (jardín), a reference to the colorful, garden-like cross-section revealed when the mold is unmolded and sliced. The dish is a staple of Sorsogon fiestas and family celebrations, prepared in large batches and shared among neighbors and guests. Its combination of savory pork, sweet pineapple, and the richness of chorizo makes it a crowd-pleasing centerpiece of any festive table."},
-                 {"type": "fact-box", "text": "Hardinera is closely related to the embutido (Filipino meatloaf roll) but is distinguished by its use of a llanera mold — the same oval aluminum mold used for leche flan — which gives it its distinctive shape and allows the colorful ingredients to be arranged in decorative layers before steaming or baking."},
-                 {"type": "tips", "items": ["Hardinera is a celebration dish — find it at Sorsogon City restaurants during fiestas and special events.", "Some pasalubong shops in Sorsogon City sell vacuum-packed hardinera for travel.", "It is best served at room temperature, sliced thick, alongside steamed rice."]}
-             ]},
-            {"name": "Timitim", "desc": "A specialty from the town of Gubat — steamed cassava cake made with grated cassava, coconut milk, and sugar, topped with crunchy pili nuts.", "image": "",
-             "quick_facts": [{"label": "Origin", "value": "Gubat, Sorsogon"}, {"label": "Main Ingredients", "value": "Cassava, coconut milk, sugar, pili nuts"}, {"label": "Type", "value": "Steamed rice/cassava cake"}],
-             "content": [
-                 {"type": "lead", "text": "Timitim is one of Sorsogon's most distinctive local delicacies — a steamed cassava cake from the coastal town of Gubat, made with freshly grated cassava, coconut milk, and sugar, crowned with the buttery crunch of pili nuts."},
-                 {"type": "text", "text": "The cassava is grated fresh and combined with coconut milk and sugar to form a dense, moist batter that is then steamed until set. The result is a cake with a pleasantly chewy, slightly sticky texture — similar to a bibingka but denser and more intensely flavored from the cassava. The pili nuts on top add a contrasting crunch and a rich, buttery nuttiness that elevates the simple cake into something memorable."},
-                 {"type": "fact-box", "text": "Timitim is a hyperlocal specialty — it is most authentically found in Gubat, Sorsogon, where it has been made by local families for generations. The combination of cassava and pili nuts is uniquely Sorsogon, bringing together two of the province's most important agricultural products in a single, humble cake."},
-                 {"type": "tips", "items": ["Look for timitim at the Gubat public market and from home bakers in the town — it is rarely found outside Gubat itself.", "Best eaten warm, shortly after steaming.", "Pairs beautifully with hot black coffee or salabat (ginger tea).", "If visiting Rizal Beach in Gubat, ask locals where to find fresh timitim nearby."]}
-             ]},
-            {"name": "Baluko (Pen Shell)", "desc": "A large, fan-shaped sea mollusk served as 'Baluko Express' in spicy coconut milk or as a sisig. Its texture is similar to a scallop but much larger — a true Sorsogon seafood treasure.", "image": "",
-             "quick_facts": [{"label": "Type", "value": "Sea mollusk (pen shell)"}, {"label": "Local Name", "value": "Baluko"}, {"label": "Serving Styles", "value": "Baluko Express (ginataan), sisig"}, {"label": "Texture", "value": "Similar to scallop, larger"}],
-             "content": [
-                 {"type": "lead", "text": "Baluko is Sorsogon's most distinctive seafood — a large, fan-shaped pen shell mollusk harvested from the coastal waters of the province, with a sweet, tender flesh that locals have been cooking in coconut milk and chili for generations."},
-                 {"type": "text", "text": "The pen shell (Atrina pectinata), known locally as baluko, is a large bivalve mollusk that can grow up to 30 centimeters in length. Its adductor muscle — the edible part — has a texture remarkably similar to a large scallop: firm yet tender, with a clean, sweet oceanic flavor. In Sorsogon, it is most famously prepared as 'Baluko Express' — a clear nod to the region's most famous dish — cooked in spicy coconut milk with labuyo chili and aromatics in the Bicolano tradition."},
-                 {"type": "text", "text": "A second popular preparation is baluko sisig — the mollusk chopped and sizzled on a hot plate with onions, chili, and calamansi, in the style of the famous Pampanga pork dish. The result is a seafood sisig with a uniquely Sorsogon character: oceanic, slightly sweet, and fiery."},
-                 {"type": "fact-box", "text": "Pen shells (family Pinnidae) are among the largest bivalves in the world. They anchor themselves vertically in sandy or muddy seabeds using a bundle of silk-like threads called byssus. In ancient Mediterranean cultures, this byssus — known as 'sea silk' — was woven into fine fabric. In Sorsogon, the baluko is valued purely for its extraordinary flavor."},
-                 {"type": "tips", "items": ["Ask at seafood restaurants in Sorsogon City for baluko — it is a local specialty not widely known outside the province.", "The freshest baluko is found at the Sorsogon City fish market in the early morning.", "Baluko Express is the most popular preparation — order it with extra rice.", "If you prefer milder flavors, ask for baluko cooked simply in butter and garlic rather than the spicy coconut milk version."]}
-             ]},
-            {"name": "Hinagom", "desc": "A rustic snack made from freshly harvested, pounded, and roasted glutinous rice mixed with coconut and sugar — a simple, ancient Sorsogon tradition.", "image": "",
-             "quick_facts": [{"label": "Type", "value": "Traditional rice snack"}, {"label": "Main Ingredients", "value": "Glutinous rice, coconut, sugar"}, {"label": "Method", "value": "Pounded and roasted"}],
-             "content": [
-                 {"type": "lead", "text": "Hinagom is one of Sorsogon's oldest and most rustic food traditions — a simple snack of freshly harvested glutinous rice, pounded and roasted, then mixed with grated coconut and sugar. It is the taste of the harvest season, unchanged across generations."},
-                 {"type": "text", "text": "The process of making hinagom begins with freshly harvested glutinous rice (malagkit), which is pounded in a wooden mortar to remove the husks, then dry-roasted in a pan until fragrant and lightly toasted. The roasted grains are mixed with freshly grated coconut and sugar, creating a snack that is simultaneously crunchy, chewy, sweet, and nutty — a combination that is deeply satisfying in its simplicity."},
-                 {"type": "fact-box", "text": "Hinagom is a harvest food — traditionally made during the rice harvest season when freshly cut glutinous rice is available. The practice of pounding and roasting rice is one of the oldest food preparation techniques in the Philippines, predating Spanish colonization by centuries. In Sorsogon, hinagom represents an unbroken thread connecting modern Bicolanos to their pre-colonial ancestors."},
-                 {"type": "tips", "items": ["Hinagom is a seasonal and hyperlocal snack — look for it at rural markets in Sorsogon during the rice harvest season (October–November).", "It is best eaten fresh, on the day it is made.", "Some families in Sorsogon still make hinagom as a harvest ritual — if invited to participate, it is a rare and meaningful cultural experience."]}
-             ]}
+            {"name": "Butanding Fingers", "desc": "Deep-fried banana fritters named in playful tribute to Donsol's whale sharks.", "image": None,
+             "quick_facts": [{"label": "Type", "value": "Street food / snack"}, {"label": "Main Ingredient", "value": "Banana (saba)"}],
+             "content": [{"type": "lead", "text": "Not actual whale shark — just a delightful local joke. Butanding Fingers are deep-fried banana fritters shaped like fingers, named in cheerful tribute to the gentle giants of Donsol Bay."}, {"type": "tips", "items": ["Find them at street food stalls near Donsol pier and in Sorsogon City markets."]}]},
+            {"name": "Hardinera", "desc": "A festive Sorsogon meatloaf baked with pork, chorizo, eggs, and pineapple.", "image": None,
+             "quick_facts": [{"label": "Type", "value": "Festive meatloaf"}, {"label": "Origin", "value": "Sorsogon, Bicol"}],
+             "content": [{"type": "lead", "text": "Hardinera is Sorsogon's festive meatloaf — a colorful, hearty baked dish of pork, chorizo, hard-boiled eggs, bell peppers, and pineapple pressed into a llanera mold, unmolded to reveal a mosaic of flavors and colors."}, {"type": "tips", "items": ["Hardinera is a holiday and celebration dish — find it at Sorsogon City restaurants during fiestas and special events."]}]},
+            {"name": "Pili Tart", "desc": "Buttery pastry shell filled with sweetened pili nut paste.", "image": None,
+             "quick_facts": [{"label": "Type", "value": "Pastry / pasalubong"}],
+             "content": [{"type": "lead", "text": "Sorsogon's bakeries produce excellent pili tarts — small, buttery pastry cups filled with sweetened pili nut paste that melt in the mouth."}, {"type": "tips", "items": ["Buy fresh from local bakeries in Sorsogon City, particularly near the public market area."]}]},
+            {"name": "Ginataang Puso ng Saging", "desc": "Banana blossom braised in coconut milk with pork and chili.", "image": None,
+             "quick_facts": [{"label": "Main Ingredient", "value": "Banana blossom (heart)"}, {"label": "Base", "value": "Coconut milk"}],
+             "content": [{"type": "lead", "text": "Banana blossom (puso ng saging) braised in coconut milk with pork and labuyo chili — a humble, deeply satisfying dish that showcases Bicolano genius for transforming simple ingredients."}, {"type": "tips", "items": ["A staple of home cooking in Sorsogon — ask at family-run carinderias for the freshest versions."]}]}
         ],
         "festivals": [
-            {"name": "Kasanggayahan Festival", "month": "October", "desc": "Sorsogon's founding anniversary celebration featuring street dancing, cultural presentations, agri-trade fairs, and beauty pageants.", "image": "",
+            {"name": "Kasanggayahan Festival", "month": "October", "desc": "Sorsogon's founding anniversary celebration featuring street dancing, cultural presentations, agri-trade fairs, and beauty pageants.", "image": None,
              "quick_facts": [{"label": "When", "value": "October (founding anniversary)"}, {"label": "Duration", "value": "Several days"}],
              "content": [{"type": "lead", "text": "The Kasanggayahan Festival marks Sorsogon province's founding anniversary with a week-long celebration of the province's diverse heritage, natural wonders, and community spirit."}, {"type": "tips", "items": ["October is an excellent time to visit Sorsogon City — the festival adds festivity to the start of the whale shark season."]}]},
-            {"name": "Butanding Festival", "month": "November", "desc": "Held in Donsol to welcome the annual return of the whale sharks, with coastal clean-ups, marine conservation forums, and cultural nights.", "image": "",
+            {"name": "Butanding Festival", "month": "November", "desc": "Held in Donsol to welcome the annual return of the whale sharks, with coastal clean-ups, marine conservation forums, and cultural nights.", "image": None,
              "quick_facts": [{"label": "When", "value": "November"}, {"label": "Location", "value": "Donsol, Sorsogon"}],
              "content": [{"type": "lead", "text": "The Butanding Festival in Donsol celebrates the annual return of whale sharks to Sorsogon waters — combining environmental advocacy, cultural celebration, and the official opening of the butanding interaction season."}, {"type": "tips", "items": ["Attending the Butanding Festival means the interaction season has just opened — secure your BIO appointment immediately."]}]}
         ],
         "myths": [
-            {"name": "The Origin of the Butanding", "desc": "In Donsol folklore, the whale sharks were once ferrymen for the gods who chose to remain in the warm waters as guardians of the passage.", "image": "",
+            {"name": "The Origin of the Butanding", "desc": "In Donsol folklore, the whale sharks were once ferrymen for the gods who chose to remain in the warm waters as guardians of the passage.", "image": None,
              "quick_facts": [{"label": "Type", "value": "Origin myth"}, {"label": "Subject", "value": "Whale shark / butanding"}],
              "content": [{"type": "lead", "text": "The whale sharks of Donsol are not just fish to the people who have lived beside them for generations — they are sacred presences, ancient beings with a purpose and a story."}, {"type": "text", "text": "In Donsol folklore, the whale sharks were once gentle giants who served as ferrymen for the gods, carrying souls across the great waters between worlds. When the gods departed, the butanding chose to remain in Donsol's warm waters — guardians of the passage, too kind to leave the mortals they had grown to love."}]},
-            {"name": "The Sleeping Bulusan", "desc": "Bulusan Volcano is not a mountain but a sleeping giant who fell into eternal slumber after a great battle with the sea.", "image": "",
+            {"name": "The Sleeping Bulusan", "desc": "Bulusan Volcano is not a mountain but a sleeping giant who fell into eternal slumber after a great battle with the sea.", "image": None,
              "quick_facts": [{"label": "Type", "value": "Origin myth"}, {"label": "Subject", "value": "Bulusan Volcano"}],
              "content": [{"type": "lead", "text": "The people of southern Sorsogon have always known that Bulusan Volcano is not simply a mountain — it is a sleeping giant, and when the earth trembles or steam rises from the crater, he stirs in an ancient dream."}, {"type": "text", "text": "Local legend holds that Bulusan Volcano is not a mountain at all but a sleeping giant who fell into eternal slumber after a great battle with the sea. When the earth shakes or steam rises from the crater, the elders say he stirs in his sleep, dreaming of the ocean he once fought — and the lover he lost to its depths."}]}
         ]
