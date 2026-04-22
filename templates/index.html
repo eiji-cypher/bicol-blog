@@ -66,8 +66,8 @@
     </div>
     <div class="places-grid">
         {% for slug, place in places.items() %}
-        <article class="place-card{% if slug in ['naga', 'sorsogon'] %} place-card--wip{% endif %}" style="--card-color: {{ place.hero_color }}">
-            {% if slug in ['naga', 'sorsogon'] %}
+        <article class="place-card{% if slug in ['sorsogon'] %} place-card--wip{% endif %}" style="--card-color: {{ place.hero_color }}">
+            {% if slug in ['sorsogon'] %}
             <div class="wip-card-overlay">
                 <span class="wip-card-badge">🚧 Coming Soon</span>
             </div>
@@ -85,7 +85,7 @@
                     <span class="meta-dot">·</span>
                     <span class="meta-item">{{ place.festivals|length }} Festivals</span>
                 </div>
-                {% if slug in ['naga', 'sorsogon'] %}
+                {% if slug in ['sorsogon'] %}
                 <button class="card-link wip-trigger" data-name="{{ place.name }}">
                     Explore {{ place.name.split()[0] }}
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>

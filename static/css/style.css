@@ -768,6 +768,23 @@ body {
 .footer-links span { color: rgba(245,240,232,0.2); }
 .footer-copy { font-size: 0.85rem; color: rgba(245,240,232,0.3); margin-top: 1rem; }
 
+.read-more-link {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 1px;
+    transition: color 0.2s, border-color 0.2s;
+}
+.read-more-link:hover { color: var(--red); }
+.read-more-link--light { color: rgba(245,240,232,0.6); }
+.read-more-link--light:hover { color: var(--gold); }
+
 /* ---- WIP ---- */
 .place-card--wip { cursor: default; }
 .place-card--wip:hover { transform: none; }
