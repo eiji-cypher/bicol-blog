@@ -10,6 +10,27 @@ app = Flask(__name__,
             static_folder=static_dir)
 
 # ─────────────────────────────────────────────────────────
+#  RECENT UPDATES
+# ─────────────────────────────────────────────────────────
+UPDATES = [
+    {
+        "type": "New Delicacy",
+        "place_slug": "naga",
+        "place_name": "Naga City",
+        "item_name": "Kinalas",
+        "description": "Naga City's signature noodle soup, featuring a rich, dark broth, tender meat from pork or beef head, and a unique thick brown sauce, often made from pig or cow brains.",
+        "link": "/detail/naga/delicacies/1" 
+    },
+    {
+        "type": "New Delicacy",
+        "place_slug": "naga",
+        "place_name": "Naga City",
+        "item_name": "Pancit Bato",
+        "description": "A unique noodle dish from Camarines Sur, featuring distinct sun-dried egg noodles with a firm, chewy texture, stir-fried with various meats and vegetables.",
+        "link": "/detail/naga/delicacies/2" 
+    }
+]
+# ─────────────────────────────────────────────────────────
 #  PLACES DATA
 # ─────────────────────────────────────────────────────────
 places = {
@@ -834,6 +855,76 @@ places = {
                 ]
             },
             {
+                "name": "Kinalas",
+                "desc": "Naga City's signature noodle soup, featuring a rich, dark broth, tender meat from pork or beef head, and a unique thick brown sauce, often made from pig or cow brains.",
+                "image": "/static/images/Bicol/nagacity.kinalas.jpg",
+                "quick_facts": [
+                    {"label": "Type", "value": "Noodle Soup"},
+                    {"label": "Origin", "value": "Naga City, Camarines Sur"},
+                    {"label": "Key Ingredients", "value": "Noodles, pork/beef head meat, brain sauce"},
+                    {"label": "Best Paired With", "value": "Hard-boiled egg, calamansi, chili"},
+                ],
+                "content": [
+                    {
+                        "type": "lead",
+                        "text": "Kinalas is more than just a noodle soup; it's a culinary icon of Naga City, a hearty and flavorful dish that embodies the city's rich gastronomic heritage. It's a must-try for anyone visiting the 'Heart of Bicol'."
+                    },
+                    {
+                        "type": "text",
+                        "text": "The dish consists of a generous serving of noodles, often miki or bihon, submerged in a dark, savory broth. What truly sets Kinalas apart is the tender, scraped meat from pork or beef head, which gives it a distinct texture and depth of flavor. This is then crowned with a thick, brown sauce, traditionally made from pig or cow brains, which adds an unparalleled richness and umami to the soup."
+                    },
+                    {
+                        "type": "fact-box",
+                        "text": "The name 'Kinalas' comes from the Bicolano word 'kalas,' meaning 'to remove the meat from the bones,' referring to the preparation of the tender meat that falls off the bone. This ancient technique highlights the Bicolano ingenuity in utilizing every part of the animal."
+                    },
+                    {
+                        "type": "text",
+                        "text": "Kinalas is typically served piping hot, often garnished with a hard-boiled egg, a sprinkle of fried garlic, and chopped spring onions. Diners usually customize their bowl with a squeeze of calamansi and a dash of spicy chili, enhancing the already complex flavors. It's a comforting and filling meal, popular for breakfast, lunch, or even a late-night snack."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Look for 'kinalasan' eateries around Naga City, especially near the public market or university areas, for authentic versions.",
+                            "Don't be shy to ask for extra 'sarsa' (the brain sauce) if you enjoy a richer flavor.",
+                            "Pair it with 'baduya' (banana fritters) or 'camote cue' (sweet potato fritters) for a classic Naga experience."
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Pancit Bato",
+                "desc": "A unique noodle dish from Camarines Sur, featuring distinct sun-dried egg noodles with a firm, chewy texture, stir-fried with various meats and vegetables.",
+                "image": "/static/images/Bicol/nagacity.pancitbato.jpg",
+                "quick_facts": [
+                    {"label": "Type", "value": "Noodle Dish"},
+                    {"label": "Origin", "value": "Bato, Camarines Sur"},
+                    {"label": "Noodle Type", "value": "Sun-dried egg noodles"},
+                    {"label": "Flavor Profile", "value": "Savory, sometimes smoky"},
+                ],
+                "content": [
+                    {
+                        "type": "lead",
+                        "text": "Hailing from the town of Bato in Camarines Sur, Pancit Bato is a regional noodle specialty that stands out with its unique noodles and savory preparation, offering a distinct Bicolano take on the classic Filipino pancit."
+                    },
+                    {
+                        "type": "text",
+                        "text": "The defining characteristic of Pancit Bato is its noodles, which are traditionally sun-dried and have a thicker, firmer, and chewier texture compared to other pancit varieties. Some even possess a subtle smokiness due to the traditional drying process, often involving firewood. These noodles are typically stir-fried with a medley of ingredients such as pork, shrimp, chicken, and various vegetables like cabbage, carrots, and snow peas, all seasoned with soy sauce, fish sauce, and other spices."
+                    },
+                    {
+                        "type": "fact-box",
+                        "text": "While often prepared as a stir-fry (guisado), Pancit Bato can also be served as a noodle soup, with the noodles cooked in chicken stock until tender. This versatility makes it a beloved dish for various occasions and preferences."
+                    },
+                    {
+                        "type": "tips",
+                        "items": [
+                            "Look for dried Pancit Bato noodles in local markets in Naga City or Bato, Camarines Sur, to take home as a souvenir.",
+                            "Try both the 'guisado' (stir-fried) and 'soup' versions to experience the full range of this dish.",
+                            "It's a popular choice for 'merienda' (afternoon snack) or a light meal."
+                        ]
+                    }
+                ]
+            },
+            {
                 "name": "Bigg's Diner Burgers",
                 "desc": "A beloved Naga institution since 1987. Bigg's is the local fast-food chain that Bicolanos proudly champion \u2014 their thick, saucy burgers and palabok are a Naga rite of passage.",
                 "image": "/static/images/Bicol/nagacity.biggsdiner.jpg",
@@ -1219,7 +1310,7 @@ SECTION_META = {
 # ─────────────────────────────────────────────────────────
 @app.route("/")
 def index():
-    return render_template("index.html", places=places)
+    return render_template("index.html", places=places, updates=UPDATES)
 
 
 WIP_SLUGS = set()  # Removed sorsogon from WIP since we now have full data

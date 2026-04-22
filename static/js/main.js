@@ -67,6 +67,30 @@ document.addEventListener('click', (e) => {
 });
 
 // ═══════════════════════════════════════════════════════
+//  UPDATES MODAL
+// ═══════════════════════════════════════════════════════
+const updatesModal = document.getElementById('updates-modal');
+const updatesModalCloseBtn = updatesModal ? updatesModal.querySelector('.updates-modal-close') : null;
+const updatesModalAcknowledgeBtn = updatesModal ? updatesModal.querySelector('.updates-modal-acknowledge') : null;
+
+if (updatesModal && !localStorage.getItem('updatesSeen')) {
+    // Show modal after a short delay to ensure page is loaded
+    setTimeout(() => {
+        updatesModal.classList.add('is-visible');
+    }, 1000); // Adjust delay as needed
+}
+
+const hideUpdatesModal = () => {
+    if (updatesModal) {
+        updatesModal.classList.remove('is-visible');
+        localStorage.setItem('updatesSeen', 'true'); // Mark updates as seen
+    }
+};
+
+if (updatesModalCloseBtn) { updatesModalCloseBtn.addEventListener('click', hideUpdatesModal); }
+if (updatesModalAcknowledgeBtn) { updatesModalAcknowledgeBtn.addEventListener('click', hideUpdatesModal); }
+
+// ═══════════════════════════════════════════════════════
 //  SCROLL-TRIGGERED ANIMATIONS (using .animate-on-scroll class)
 // ═══════════════════════════════════════════════════════
 const animateEls = document.querySelectorAll('.animate-on-scroll');

@@ -1473,3 +1473,141 @@ body {
     .myth-name { font-size: 1.2rem; }
     .other-title { font-size: 1.4rem; }
 }
+
+/* Updates Modal */
+.updates-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 20, 16, 0.8);
+    backdrop-filter: blur(8px);
+    z-index: 100001; /* Higher than site-loader */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.updates-modal.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.updates-modal-content {
+    background: var(--cream);
+    max-width: 600px;
+    width: 90%;
+    padding: 2.5rem;
+    position: relative;
+    border-top: 4px solid var(--gold);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.updates-modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--ink-light);
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.updates-modal-close:hover {
+    color: var(--red);
+}
+
+.updates-modal-title {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 1.5rem;
+}
+
+.updates-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.update-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed rgba(26, 20, 16, 0.1);
+}
+
+.update-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.update-type {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.update-link {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--red);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.update-link:hover {
+    color: var(--ink);
+}
+
+.update-description {
+    font-size: 0.95rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
+.updates-modal-acknowledge {
+    display: inline-block;
+    padding: 0.85rem 2rem;
+    background: var(--ink);
+    color: var(--cream);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.updates-modal-acknowledge:hover {
+    background: var(--red);
+}
+
+/* Responsive adjustments for modal */
+@media (max-width: 768px) {
+    .updates-modal-content {
+        padding: 1.5rem;
+    }
+    .updates-modal-title {
+        font-size: 1.8rem;
+    }
+    .update-link {
+        font-size: 1rem;
+    }
+    .update-description {
+        font-size: 0.85rem;
+    }
+}
