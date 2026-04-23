@@ -37,7 +37,7 @@ places = {
     "legazpi": {
         "name": "Legazpi City",
         "province": "Albay",
-        "tagline": "Gateway to the Perfect Cone",
+        "tagline": "Gateway to the Perfect Cone, City of Fun and Adventure",
         "hero_color": "#c0392b",
         "description": "Legazpi City sits in the shadow of the iconic Mayon Volcano — the world's most perfectly shaped stratovolcano. A bustling port city and gateway to the rest of Bicol, it blends colonial charm with volcanic drama at every turn.",
         "image": "/static/images/Bicol/legazpicity.jpg",
@@ -248,37 +248,7 @@ places = {
                         ]
                     }
                 ]
-        },
-        {
-            "name": "Lignon Hill Nature Park",
-            "desc": "A 156-meter hill providing a 360-degree panoramic view of Legazpi City, the Albay Gulf, and a breathtakingly close look at Mayon Volcano.",
-            "image": "/static/images/Bicol/legazpicity.lignonhill.jpg",
-            "quick_facts": [
-                {"label": "Elevation", "value": "156 meters"},
-                {"label": "Best Time", "value": "Early morning or sunset"},
-                {"label": "Activities", "value": "Zipline, hanging bridge, trekking"}
-            ],
-            "content": [
-                {"type": "lead", "text": "For the best elevated views of Legazpi City without climbing a volcano, Lignon Hill is the ultimate vantage point."},
-                {"type": "text", "text": "Rising 156 meters above the city, Lignon Hill Nature Park offers a steep but rewarding climb. At the summit, visitors are treated to a spectacular 360-degree panorama. To the north, Mayon Volcano looms massive and majestic; to the east, the blue expanse of the Albay Gulf; and below, the sprawling cityscape of Legazpi."},
-                {"type": "tips", "items": ["The walk up is steep but paved. Alternatively, you can hire a habal-habal (motorcycle) to the top.", "Try the 320-meter zipline for an adrenaline rush with Mayon in the background."]}
-            ]
-        },
-        {
-            "name": "Quitinday Green Hills",
-            "desc": "Often called the 'Chocolate Hills of Bicol', this sprawling reserve in Camalig features rolling, grass-covered mounds with Mayon Volcano as a backdrop.",
-            "image": "/static/images/Bicol/legazpicity.quitinday.jpg",
-            "quick_facts": [
-                {"label": "Location", "value": "Camalig, Albay"},
-                {"label": "Formation", "value": "Coral limestone"},
-                {"label": "Nickname", "value": "Bicol's Chocolate Hills"}
-            ],
-            "content": [
-                {"type": "lead", "text": "Tucked away in the municipality of Camalig, the Quitinday Green Hills Formation is a geographical wonder that rivals Bohol's famous landscape, but with a uniquely Bicolano twist: Mayon Volcano photobombing the horizon."},
-                {"type": "text", "text": "These rolling, verdant mounds span across hundreds of hectares. Unlike the coral limestone of Bohol, these hills are believed to be geological formations shaped by ancient volcanic activity and erosion. A short trek to the highest peaks rewards hikers with sweeping views of the lush Albay countryside."},
-                {"type": "tips", "items": ["Best visited during the dry season when the trails are less slippery.", "Rent a tricycle from Camalig town proper for the most convenient access."]}
-            ]
-            }
+            },
         ],
         "delicacies": [
             {
@@ -704,42 +674,6 @@ places = {
                 ]
             },
             {
-                "name": "Camarines Sur Watersports Complex",
-                "desc": "One of Asia's premier cable wakeboarding parks. Whether you're a seasoned boarder or first-timer, the CamSur WakePark offers thrills on its Olympic-standard lake.",
-                "image": "/static/images/Bicol/nagacity.camsurcomplex.jpg",
-                "quick_facts": [
-                    {"label": "Location", "value": "Pili, Camarines Sur"},
-                    {"label": "Type", "value": "Cable wakeboarding park"},
-                    {"label": "Cable System", "value": "Olympic-standard"},
-                    {"label": "Activities", "value": "Wakeboarding, wakeskating, kneeboarding"},
-                    {"label": "Best For", "value": "All levels, from beginners to pros"},
-                ],
-                "content": [
-                    {
-                        "type": "lead",
-                        "text": "The Camarines Sur Watersports Complex (CWC) — better known as the CamSur WakePark — is Asia's premier cable wakeboarding destination, a world-class aquatic sports facility that brought international watersports competition to the heart of the Bicol Region."
-                    },
-                    {
-                        "type": "text",
-                        "text": "The WakePark operates a full-size Olympic-standard cable system on a large man-made lake, offering wakeboarding, wakeskating, and kneeboarding to riders of all skill levels. Beginners can take introductory lessons with trained instructors using beginner-friendly equipment, while advanced riders can attempt the course's ramps, rails, and kickers. The park has hosted multiple international wakeboarding competitions, drawing elite athletes from around the world to Camarines Sur."
-                    },
-                    {
-                        "type": "fact-box",
-                        "text": "Cable wakeboarding parks are considered more accessible and environmentally friendly than boat-pulled wakeboarding — the overhead cable system replaces the need for motorboats entirely, reducing fuel consumption, wake turbulence, and noise. The CamSur WakePark's Olympic-standard system can run multiple riders simultaneously on the same cable loop."
-                    },
-                    {
-                        "type": "tips",
-                        "items": [
-                            "No prior experience is needed — the park caters to absolute beginners and provides full instruction and equipment.",
-                            "Book in advance during weekends and holidays, as the park can get busy.",
-                            "The complex also has accommodation, restaurants, and a beach area on the lake — it's a full resort experience.",
-                            "Wear a rash guard and water shoes for comfort; the park provides life jackets and helmets.",
-                            "The park is located in Pili, Camarines Sur — approximately 30–45 minutes from Naga City by road."
-                        ]
-                    }
-                ]
-            },
-            {
                 "name": "Mt. Isarog National Park",
                 "desc": "A cloud forest-draped inactive volcano offering pristine trails, waterfalls, and extraordinary biodiversity just outside Naga City.",
                 "image": "/static/images/Bicol/nagacity.mtisarog.jpg",
@@ -771,36 +705,6 @@ places = {
                     }
                 ]
             },
-            {
-                "name": "Naga City Heritage District",
-                "desc": "A compact zone of colonial-era buildings, the oldest church in Bicol, and the vibrant Naga City public market — the commercial and cultural soul of the Bicol capital.",
-                "image": "/static/images/Bicol/nagacity.heritagedist.jpg",
-                "quick_facts": [
-                    {"label": "Location", "value": "Central Naga City, Camarines Sur"},
-                    {"label": "Key Sites", "value": "Metropolitan Cathedral, Naga Museum, City Hall"},
-                    {"label": "Best For", "value": "Walking tours, history, architecture"},
-                    {"label": "Entry", "value": "Free (public spaces)"},
-                ],
-                "content": [
-                    {
-                        "type": "lead",
-                        "text": "Naga City's historic center is a compact, walkable district where colonial-era churches, Spanish-period buildings, and the lively pulse of a modern city coexist in fascinating layers. At its heart is the Naga Metropolitan Cathedral — the oldest church in the Bicol Region — and the rambling, sensory-overloading Naga City public market."
-                    },
-                    {
-                        "type": "text",
-                        "text": "The Naga Metropolitan Cathedral, formally the Parish of Saint John the Evangelist, is the oldest church in the Bicol Region, serving as the spiritual anchor of the city for centuries. It plays a central role in the Peñafrancia Festival each September, receiving the image of Our Lady of Peñafrancia during the Traslacion and housing her for the nine-day novena before her return by water to the basilica."
-                    },
-                    {
-                        "type": "tips",
-                        "items": [
-                            "A self-guided walking tour of the Heritage District takes approximately 2 hours — start at the Metropolitan Cathedral and work outward.",
-                            "The Naga City Museum offers an excellent overview of the city's history and the Peñafrancia devotion.",
-                            "The public market is at its most atmospheric in the early morning — the fish section, in particular, is a sensory feast.",
-                            "Local guides are available for heritage walks; ask at the City Tourism Office."
-                        ]
-                    }
-                ]
-        },
         {
             "name": "Panicuason Hot Springs",
             "desc": "A natural thermal resort nestled at the foot of Mt. Isarog, offering multiple pools of varying temperatures heated by geothermal energy.",
@@ -922,27 +826,6 @@ places = {
                             "It's a popular choice for 'merienda' (afternoon snack) or a light meal."
                         ]
                     }
-                ]
-            },
-            {
-                "name": "Bigg's Diner Burgers",
-                "desc": "A beloved Naga institution since 1987. Bigg's is the local fast-food chain that Bicolanos proudly champion \u2014 their thick, saucy burgers and palabok are a Naga rite of passage.",
-                "image": "/static/images/Bicol/nagacity.biggsdiner.jpg",
-                "quick_facts": [
-                    {"label": "Founded", "value": "1987, Naga City"},
-                    {"label": "Type", "value": "Local fast-food chain"},
-                    {"label": "Must-Try", "value": "Burgers, palabok, spaghetti"},
-                    {"label": "Branches", "value": "Throughout Bicol Region"},
-                ],
-                "content": [
-                    {"type": "lead", "text": "Bigg's Diner is Naga City's most beloved homegrown restaurant chain \u2014 a local fast-food institution that has been feeding Bicolanos since 1987 and remains a point of fierce regional pride."},
-                    {"type": "text", "text": "Founded in Naga City in 1987, Bigg's Diner grew from a single diner into a regional chain with branches across the Bicol Region. Its menu centers on thick, saucy burgers, Filipino-style spaghetti, and palabok \u2014 all served in generous portions at prices that have kept generations of Naguenos loyal. For Bicolanos living abroad or in Manila, a visit to Bigg's upon returning home is practically a ritual."},
-                    {"type": "fact-box", "text": "Bigg's Diner is one of the few Filipino regional fast-food chains to have successfully resisted displacement by national and international chains. In Naga City, it remains more popular than any global burger brand \u2014 a testament to the loyalty of Bicolano consumers to their own."},
-                    {"type": "tips", "items": [
-                        "The original Bigg's branch in Naga City is the one to visit for the full experience.",
-                        "Try the palabok alongside the burger \u2014 the combination sounds odd but is a beloved local pairing.",
-                        "Bigg's is busiest at lunch and dinner \u2014 arrive slightly off-peak for faster service."
-                    ]}
                 ]
             },
             {
