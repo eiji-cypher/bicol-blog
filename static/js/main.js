@@ -1,6 +1,20 @@
 // Bicol Blog — Main JS
 
 // ═══════════════════════════════════════════════════════
+//  SCROLL PROGRESS BAR
+// ═══════════════════════════════════════════════════════
+const progressBar = document.createElement('div');
+progressBar.className = 'scroll-progress-bar';
+document.body.appendChild(progressBar);
+
+window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    progressBar.style.width = scrolled + '%';
+}, { passive: true });
+
+// ═══════════════════════════════════════════════════════
 //  SITE LOADER
 // ═══════════════════════════════════════════════════════
 window.addEventListener('load', () => {
@@ -189,5 +203,91 @@ if (header) {
         header.style.boxShadow = window.scrollY > 20
             ? '0 2px 24px rgba(0,0,0,0.1)'
             : 'none';
+    }, { passive: true });
+}
+
+// ═══════════════════════════════════════════════════════
+//  MAGNETIC BUTTON EFFECT
+// ═══════════════════════════════════════════════════════
+const magneticButtons = document.querySelectorAll('.hero-cta');
+
+magneticButtons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = (e.clientX - rect.left - rect.width / 2) * 0.4;
+        const y = (e.clientY - rect.top - rect.height / 2) * 0.4;
+        
+        btn.classList.add('magnet-active');
+        btn.style.transform = `translate(${x}px, ${y}px)`;
+    });
+
+    btn.addEventListener('mouseleave', () => {
+        btn.classList.remove('magnet-active');
+        btn.style.transform = '';
+    });
+});
+
+// ═══════════════════════════════════════════════════════
+//  HERO SPOTLIGHT EFFECT
+// ═══════════════════════════════════════════════════════
+const heroSection = document.querySelector('.hero');
+if (heroSection) {
+    heroSection.addEventListener('mousemove', (e) => {
+        const rect = heroSection.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        heroSection.style.setProperty('--mouse-x', `${x}px`);
+        heroSection.style.setProperty('--mouse-y', `${y}px`);
+    });
+}
+
+// ═══════════════════════════════════════════════════════
+//  3D TILT EFFECT FOR PLACE CARDS
+// ═══════════════════════════════════════════════════════
+const placeCards = document.querySelectorAll('.place-card');
+
+placeCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = ((y - centerY) / centerY) * -8;
+        const rotateY = ((x - centerX) / centerX) * 8;
+        
+        card.classList.add('tilt-active');
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.01)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+        card.classList.remove('tilt-active');
+        card.style.transform = '';
+    });
+});
+
+// ═══════════════════════════════════════════════════════
+//  CARD IMAGE PARALLAX EFFECT
+// ═══════════════════════════════════════════════════════
+const cardImages = document.querySelectorAll('.card-img');
+if (cardImages.length > 0) {
+    let tickingParallax = false;
+    window.addEventListener('scroll', () => {
+        if (!tickingParallax) {
+            requestAnimationFrame(() => {
+                const winHeight = window.innerHeight;
+                cardImages.forEach(img => {
+                    const rect = img.getBoundingClientRect();
+                    if (rect.top < winHeight && rect.bottom > 0) {
+                        const yPos = (rect.top / winHeight - 0.5) * -40;
+                        img.style.setProperty('--parallax-y', `${yPos}px`);
+                    }
+                });
+                tickingParallax = false;
+            });
+            tickingParallax = true;
+        }
     }, { passive: true });
 }
