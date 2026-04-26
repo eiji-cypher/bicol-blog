@@ -2,7 +2,7 @@
 
 A travel blog celebrating the culture, food, and legends of Bicol, Philippines.
 
-**🚀 The system is fully deployed! View the live site here: [Insert Live Site URL]**
+**🚀 The system is fully deployed! View the live site here: [region5.vercel.app]**
 
 ## Features
 - **3 destinations**: Legazpi City, Naga City, Sorsogon City
