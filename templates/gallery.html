@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-section alt-bg" style="padding-top: 120px; min-height: 100vh;">
+    <div class="content-inner">
+        <header class="section-header">
+            <h1 class="section-title">Image Gallery</h1>
+        </header>
+        
+        <div class="items-grid">
+            {% for image in images %}
+            <div class="item-card animate-on-scroll">
+                <div class="card-img-wrap">
+                    <img src="{{ image.url }}" alt="{{ image.title }}" class="card-img lightbox-trigger" loading="lazy">
+                </div>
+                <div class="item-card-body" style="padding: 1rem; flex: none;">
+                    <h3 class="item-name" style="margin: 0; font-size: 1rem; text-align: center;">{{ image.title }}</h3>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- Lightbox Container -->
+<div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+</div>
+{% endblock %}

@@ -371,44 +371,26 @@ places = {
                 ]
             },
             {
-                "name": "Kinunot",
-                "desc": "Shredded stingray (pagi) or shark cooked in coconut cream with malunggay leaves and red hot peppers. A bold, unforgettable Bicolano classic.",
-                "image": "/static/images/Bicol/legazpicity.kinunot.jpg",
+                "name": "Sili Ice Cream",
+                "desc": "Arguably Bicol's most adventurous delicacy \u2014 chili-infused ice cream. The sweet cream and fiery labuyo create an unforgettable push-pull that captures Bicol's bold culinary spirit.",
+                "image": "/static/images/Bicol/nagacity.sili.jpg",
                 "quick_facts": [
-                    {"label": "Main Protein", "value": "Stingray (pagi) or shark"},
-                    {"label": "Base", "value": "Coconut cream (kakang gata)"},
-                    {"label": "Key Flavors", "value": "Coconut, malunggay, labuyo chili"},
-                    {"label": "Cooking Time", "value": "30–45 minutes"},
-                    {"label": "Best Paired With", "value": "Steamed rice, dried fish"},
+                    {"label": "Key Ingredient", "value": "Labuyo chili (siling labuyo)"},
+                    {"label": "Flavor Profile", "value": "Sweet, creamy, then fiery"},
+                    {"label": "Origin", "value": "Bicol Region, Philippines"},
+                    {"label": "Heat Level", "value": "Mild to moderate (varies by maker)"},
                 ],
                 "content": [
-                    {
-                        "type": "lead",
-                        "text": "Kinunot is one of the boldest expressions of Bicolano cuisine — shredded stingray or shark meat slow-cooked in rich coconut cream with the peppery brightness of malunggay (moringa) leaves and the fiery punch of red labuyo chili. It is a dish that surprises first-timers and becomes a lifelong craving."
-                    },
-                    {
-                        "type": "text",
-                        "text": "The name 'kinunot' comes from the Bicolano word meaning 'to shred,' describing the technique of manually pulling the cooked fish apart into fine, tender strands. Stingray (pagi) is the traditional choice, prized for its firm, slightly sweet flesh that holds up beautifully to the slow cooking and shreds cleanly. In some versions, small sharks (pating) are used instead, yielding a slightly different but equally satisfying texture."
-                    },
-                    {
-                        "type": "text",
-                        "text": "The malunggay (moringa) leaves added at the end of cooking bring a fresh, slightly bitter counterpoint to the rich coconut cream — a classic Bicolano technique of balancing richness with herbal freshness. The dish is finished with generous amounts of labuyo chili, whose heat cuts through the fat of the coconut milk and adds the region's signature fire."
-                    },
-                    {
-                        "type": "fact-box",
-                        "text": "Moringa (malunggay) leaves, a key ingredient in kinunot, are one of the most nutritionally dense greens in the world. They contain seven times the vitamin C of oranges, four times the calcium of milk, and four times the vitamin A of carrots. Their inclusion in kinunot is both a culinary and nutritional choice that reflects the Bicolano genius for combining pleasure and nourishment."
-                    },
-                    {
-                        "type": "tips",
-                        "items": [
-                            "Kinunot is a staple of home cooking in Bicol — the best versions are found in family-run carinderias, not tourist restaurants.",
-                            "Some restaurants in Legazpi offer 'kinunot na pagi' as a specialty — ask the staff if they make it in-house.",
-                            "The dish is traditionally served in the palm-leaf wrappers or clay pots in which it was cooked — presentation varies.",
-                            "If you're cooking it yourself, buy fresh pagi from the Legazpi public market, where the fish market section opens at dawn."
-                        ]
-                    }
+                    {"type": "lead", "text": "Sili ice cream is Bicol's most famous culinary paradox \u2014 a frozen dessert spiked with labuyo chili that delivers a wave of sweet, creamy cold followed by a slow, building heat. It is the edible embodiment of the Bicolano character: warm, welcoming, and then unexpectedly fiery."},
+                    {"type": "text", "text": "The concept is simple but the execution is surprisingly nuanced. The chili is incorporated into the ice cream base in a way that allows the sweetness and creaminess to register first on the palate, with the heat arriving as a pleasant afterburn rather than an assault. The best versions use fresh labuyo chili, which has a fruity, bright heat distinct from the dull burn of dried chili powder."},
+                    {"type": "fact-box", "text": "Sili ice cream has become so associated with Bicol that it is now sold in pasalubong shops across the region and has inspired a wave of chili-infused food products \u2014 sili chocolate, sili candy, sili vinegar \u2014 that collectively form a uniquely Bicolano food identity built around the labuyo chili."},
+                    {"type": "tips", "items": [
+                        "The most famous sili ice cream in Naga is sold at small shops near the Peñafrancia Shrine area \u2014 ask locals for the current best spot.",
+                        "Start with a small scoop if you're heat-sensitive \u2014 the heat level varies significantly between makers.",
+                        "Sili ice cream is best eaten immediately \u2014 the heat dissipates somewhat when the ice cream melts."
+                    ]}
                 ]
-        },
+            },
         {
             "name": "Guinobatan Longganisa",
             "desc": "A distinctively small, garlicky, and meaty pork sausage native to the town of Guinobatan, Albay. Traditionally hand-chopped rather than ground.",
@@ -829,27 +811,6 @@ places = {
                 ]
             },
             {
-                "name": "Sili Ice Cream",
-                "desc": "Arguably Bicol's most adventurous delicacy \u2014 chili-infused ice cream. The sweet cream and fiery labuyo create an unforgettable push-pull that captures Bicol's bold culinary spirit.",
-                "image": "/static/images/Bicol/nagacity.sili.jpg",
-                "quick_facts": [
-                    {"label": "Key Ingredient", "value": "Labuyo chili (siling labuyo)"},
-                    {"label": "Flavor Profile", "value": "Sweet, creamy, then fiery"},
-                    {"label": "Origin", "value": "Bicol Region, Philippines"},
-                    {"label": "Heat Level", "value": "Mild to moderate (varies by maker)"},
-                ],
-                "content": [
-                    {"type": "lead", "text": "Sili ice cream is Bicol's most famous culinary paradox \u2014 a frozen dessert spiked with labuyo chili that delivers a wave of sweet, creamy cold followed by a slow, building heat. It is the edible embodiment of the Bicolano character: warm, welcoming, and then unexpectedly fiery."},
-                    {"type": "text", "text": "The concept is simple but the execution is surprisingly nuanced. The chili is incorporated into the ice cream base in a way that allows the sweetness and creaminess to register first on the palate, with the heat arriving as a pleasant afterburn rather than an assault. The best versions use fresh labuyo chili, which has a fruity, bright heat distinct from the dull burn of dried chili powder."},
-                    {"type": "fact-box", "text": "Sili ice cream has become so associated with Bicol that it is now sold in pasalubong shops across the region and has inspired a wave of chili-infused food products \u2014 sili chocolate, sili candy, sili vinegar \u2014 that collectively form a uniquely Bicolano food identity built around the labuyo chili."},
-                    {"type": "tips", "items": [
-                        "The most famous sili ice cream in Naga is sold at small shops near the Peñafrancia Shrine area \u2014 ask locals for the current best spot.",
-                        "Start with a small scoop if you're heat-sensitive \u2014 the heat level varies significantly between makers.",
-                        "Sili ice cream is best eaten immediately \u2014 the heat dissipates somewhat when the ice cream melts."
-                    ]}
-                ]
-            },
-            {
                 "name": "Tinutungang Manok",
                 "desc": "Chicken simmered in charred coconut and coconut cream, giving it a smoky, nutty depth. The burnt coconut imparts a uniquely Bicolano complexity to this comforting dish.",
                 "image": "/static/images/Bicol/nagacity.tinutungangmanok.jpg",
@@ -1196,15 +1157,10 @@ def index():
     return render_template("index.html", places=places, updates=UPDATES)
 
 
-WIP_SLUGS = set()  # Removed sorsogon from WIP since we now have full data
-
-
 @app.route("/place/<slug>")
 def place(slug):
     if slug not in places:
         return "Place not found", 404
-    if slug in WIP_SLUGS:
-        return render_template("wip.html", place=places[slug])
     return render_template("place.html", place=places[slug], slug=slug, all_places=places)
 
 
@@ -1256,6 +1212,20 @@ def detail(slug, section, idx):
         prev_item=prev_item,
         next_item=next_item,
     )
+
+
+@app.route("/gallery")
+def gallery():
+    images = []
+    for slug, place in places.items():
+        if "image" in place and place["image"]:
+            images.append({"url": place["image"], "title": place["name"]})
+        for category in ["attractions", "delicacies", "festivals", "myths"]:
+            for item in place.get(category, []):
+                if "image" in item and item["image"]:
+                    images.append({"url": item["image"], "title": item["name"]})
+    
+    return render_template("gallery.html", images=images)
 
 
 if __name__ == "__main__":

@@ -45,15 +45,15 @@ if (navToggle && navLinksEl) {
 // ═══════════════════════════════════════════════════════
 //  PAGE TRANSITIONS
 // ═══════════════════════════════════════════════════════
-const pageTransitionOverlay = document.getElementById('page-transition'); // Assuming a div with id="page-transition" exists in base.html for this
+const pageTransitionContainer = document.getElementById('page-transition-container');
 
 // On page load — slide overlay out
 window.addEventListener('DOMContentLoaded', () => {
-    if (pageTransitionOverlay) {
-        pageTransitionOverlay.classList.add('is-entering');
+    if (pageTransitionContainer) {
+        pageTransitionContainer.classList.add('is-entering'); // Panels are initially visible
         requestAnimationFrame(() => {
             requestAnimationFrame(() => {
-                pageTransitionOverlay.classList.remove('is-entering');
+                pageTransitionContainer.classList.remove('is-entering'); // Animate panels out
             });
         });
     }
@@ -70,13 +70,24 @@ document.addEventListener('click', (e) => {
 
     e.preventDefault();
 
-    if (pageTransitionOverlay) {
-        pageTransitionOverlay.classList.add('is-entering');
+    if (pageTransitionContainer) {
+        pageTransitionContainer.classList.add('is-entering'); // Animate panels in
         setTimeout(() => {
             window.location.href = href;
-        }, 480); // Match CSS transition duration
+        }, 600); // Match new CSS transition duration
     } else {
         window.location.href = href;
+    }
+});
+
+// Handle browser back/forward button navigation (bfcache)
+window.addEventListener('pageshow', (event) => {
+    // event.persisted is true if the page was restored from the browser's cache.
+    if (event.persisted && pageTransitionContainer) {
+        // When a page is restored from bfcache, the 'is-entering' class might
+        // still be present from when the user navigated away. We force-remove it
+        // to ensure the slide-out animation plays and the content is visible.
+        pageTransitionContainer.classList.remove('is-entering');
     }
 });
 
@@ -156,7 +167,7 @@ if (detailHeroBg) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
         const target = document.querySelector(anchor.getAttribute('href'));
-        if (entry.isIntersecting) {
+        if (target) {
             e.preventDefault();
             target.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
@@ -290,4 +301,44 @@ if (cardImages.length > 0) {
             tickingParallax = true;
         }
     }, { passive: true });
+}
+
+// ═══════════════════════════════════════════════════════
+//  LIGHTBOX GALLERY
+// ═══════════════════════════════════════════════════════
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxCaption = document.getElementById('lightbox-caption');
+const lightboxClose = document.querySelector('.lightbox-close');
+const galleryImages = document.querySelectorAll('.lightbox-trigger');
+
+if (lightbox && galleryImages.length > 0) {
+    galleryImages.forEach(img => {
+        img.addEventListener('click', () => {
+            lightbox.style.display = 'flex';
+            // Small delay to allow display block to apply before opacity transition
+            setTimeout(() => lightbox.classList.add('is-visible'), 10);
+            lightboxImg.src = img.src;
+            lightboxCaption.textContent = img.alt;
+            document.body.style.overflow = 'hidden'; // Prevent page scrolling
+        });
+    });
+
+    const closeLightbox = () => {
+        lightbox.classList.remove('is-visible');
+        setTimeout(() => {
+            lightbox.style.display = 'none';
+            document.body.style.overflow = ''; // Restore page scrolling
+        }, 300);
+    };
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('is-visible')) closeLightbox();
+    });
 }
