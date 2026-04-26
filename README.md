@@ -2,6 +2,8 @@
 
 A travel blog celebrating the culture, food, and legends of Bicol, Philippines.
 
+**🚀 The system is fully deployed! View the live site here: [Insert Live Site URL]**
+
 ## Features
 - **3 destinations**: Legazpi City, Naga City, Sorsogon City
 - **Top Attractions**, **Local Delicacies**, **Festivals**, and **Myths & Legends** for each
@@ -16,7 +18,9 @@ python app.py
 ```
 Open http://localhost:5000
 
-## Deploy to Vercel
+## Deployment Reference
+
+This project is fully deployed and hosted on Vercel. To deploy updates or launch your own instance:
 
 ### Option 1: Vercel CLI
 ```bash
